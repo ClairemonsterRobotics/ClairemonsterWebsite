@@ -1,2 +1,2 @@
 # Clairemonster-Website
-<a href="clairemontrobotics.com">clairemontrobotics.com</a>
+<a href="http://clairemontrobotics.com">clairemontrobotics.com</a>
