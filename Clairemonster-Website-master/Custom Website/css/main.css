@@ -126,14 +126,15 @@
 		height: 320px;
 	}
 	/* .demo-card-square > .mdl-card__title */
-	#card_2017{
+	.demo-card-square > .mdl-card__title{
   		color: #fff;
-  		background: url('/images/history_photos/2017.jpg') bottom right 15% no-repeat #46B6AC;
-	}
+  		background: url('/images/history_photos/2017.png') bottom right 15% no-repeat #46B6AC;
+	}/*
 	#card_2016{
   		color: #fff;
   		background: url('/images/history_photos/2016.jpg') bottom right 15% no-repeat #46B6AC;
 	}
+	*/
 	/*The histoy page cards (End)*/
 </style>
 
