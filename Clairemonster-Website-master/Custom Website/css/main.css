@@ -125,12 +125,12 @@
  		width: 320px;
 		height: 320px;
 	}
-
-	#card_2017 .demo-card-square > .mdl-card__title {
+	/* .demo-card-square > .mdl-card__title */
+	#card_2017{
   		color: #fff;
   		background: url('/images/history_photos/2017.jpg') bottom right 15% no-repeat #46B6AC;
 	}
-	#card_2016 .demo-card-square > .mdl-card__title {
+	#card_2016{
   		color: #fff;
   		background: url('/images/history_photos/2016.jpg') bottom right 15% no-repeat #46B6AC;
 	}
