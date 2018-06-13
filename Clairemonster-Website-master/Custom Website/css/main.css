@@ -117,13 +117,23 @@
 	}
 
 	.contact_text{
-	color: #FF00CC;
-		
+		color: #FF00CC;
 	}	
 	
+	/*The histoy page cards (Begin)*/
 	.demo-card-square.mdl-card {
- 	 width: 320px;
-	  height: 320px;
+ 		width: 320px;
+		height: 320px;
 	}
+
+	#2017_card .demo-card-square > .mdl-card__title {
+  		color: #fff;
+  		background: url('/images/history_photos/2017.jpg') bottom right 15% no-repeat #46B6AC;
+	}
+	#2016_card .demo-card-square > .mdl-card__title {
+  		color: #fff;
+  		background: url('/images/history_photos/2016.jpg') bottom right 15% no-repeat #46B6AC;
+	}
+	/*The histoy page cards (End)*/
 </style>
 
