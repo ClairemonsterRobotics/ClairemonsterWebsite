@@ -1,0 +1,140 @@
+<style type="text/css">
+	
+	.logo {
+	  width: 150px;
+	  height: 150px;
+	  padding-top: 80px;
+	  fill: currentColor;
+	}
+
+	.headroom {
+
+	    z-index: 9998;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    -webkit-transition: .25s
+	    -o-transition: .25s
+	    -moz-transition: .25s
+	    -ms-transition: .25s
+	    transition: transform .25s ease-in-out;
+	}
+
+	.headroom--unpinned {
+	   top: -108px;
+	  -webkit-transition: .25s;
+	  -o-transition: .25s;
+	  -moz-transition: .25s;
+	  -ms-transition: .25s;
+	  transition: .25s;
+	  -webkit-transform: translateY(-108px);
+	  -o-transform: translateY(-108px);
+	  -moz-transform: translateY(-108px);
+	  -ms-transform: translateY(-108px);
+	  transform: translateY(-108px);
+	}
+
+	.headroom--pinned {
+	   top: 0;
+	  -webkit-transition: .5s;
+	  -o-transition: .5s;
+	  -moz-transition: .5s;
+	  -ms-transition: .5s;
+	  transition: .5s;
+	}
+
+	.hero{
+		/* Max width */
+		width:100vw;
+		/* Max height */
+		height:100vh;
+
+		/* Center horizontally and vertically */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		/*Background*/
+		background-image: url('images/team_photo.jpg');
+		background-size: cover;
+    	background-position: center center;
+   		background-repeat: no-repeat;
+
+   		/* Parallax image setting*/
+    	background-attachment: fixed;
+	}
+
+	.hero h1{
+		/* Align and style text */
+		text-align: center;
+		color: white;
+		font-weight: bold;
+		font-size: 14.8vw;
+	}
+
+	.card_title{
+		padding-top:50px;
+		align-self: center;
+		font-weight: bold;
+		font-color: 'mdl-color-accent';
+	}
+
+	.card_format{
+		background: lightgray;
+		width:90vw;
+		height:40vh;
+	}
+
+	.card_text{
+		color: black;
+		font-size: 20px;
+	}
+
+	.our_team_image{
+		background-image: url('images/our_team.JPG');
+		padding:10px;
+		background-position:center;
+		background-size:cover;
+		position:relative;
+	}
+
+	.current_image{
+		background-image: url('images/current.JPG');
+		padding:10px;
+		background-position:center;
+		background-size:cover;
+		position:relative;
+	}
+
+	.spacer{
+		padding:25px;
+	}
+
+	.contact{
+		margin: 0 auto;
+		width:90vw;
+		height:40vh;
+	}
+
+	.contact_text{
+		color: #FF00CC;
+	}	
+	
+	/*The histoy page cards (Begin)*/
+	.demo-card-square.mdl-card {
+ 		width: 320px;
+		height: 320px;
+	}
+	/* .demo-card-square > .mdl-card__title */
+	.demo-card-square > .mdl-card__title{
+  		color: #fff;
+  		background: url('../images/history_photos/2017.png') bottom right 15% no-repeat #46B6AC;
+	}/*
+	#card_2016{
+  		color: #fff;
+  		background: url('/images/history_photos/2016.jpg') bottom right 15% no-repeat #46B6AC;
+	}
+	*/
+	/*The histoy page cards (End)*/
+</style>
+
