@@ -125,23 +125,22 @@
  		width: 20vw;
 		height: 20vw;
 	}
-	#card_2016 .demo-card-square > .mdl-card__title{
+	.demo-card-square > .mdl-card__title{
   		color: #fff;
-  		background: url('images/history_photos/2016.jpg');
     		max-width: 100%;
     		max-height: 100%;
+	}
+	#card_2015 .demo-card-square > .mdl-card__title{
+  		background: url('images/history_photos/2015.jpg');
+	}
+	#card_2016 .demo-card-square > .mdl-card__title{
+  		background: url('images/history_photos/2016.jpg');
 	}
 	#card_2017 .demo-card-square > .mdl-card__title{
-  		color: #fff;
   		background: url('images/history_photos/2017.jpg');
-    		max-width: 100%;
-    		max-height: 100%;
 	}
 	#card_2018 .demo-card-square > .mdl-card__title{
-  		color: #fff;
   		background: url('images/history_photos/2018.jpg');
-    		max-width: 100%;
-    		max-height: 100%;
 	}
 	/*The histoy page cards (End)*/
 </style>
