@@ -17,13 +17,16 @@
       <title>Clairemont Robotics</title>
    </head>
    <div class="mdl-layout">
-   <div id="header"></div>
-   <!-- <div id="headerContent"></div> -->
-   <!-- Header -->
+
+   <!-- Header Utilizes the Google Material Design Lite header feature.
+        The headroom class allows the header bar to appear upon scrolling up -->
    <header class="mdl-layout__header headroom">
       <div class="mdl-layout__header-row">
-         <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemont Robotics</a></span>
+        <!--The <span> tag allows for the text to be inline with everything else.  The <a> tag is for the link.-->
+         <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemonster Robotics</a></span>
+         <!--Space between title and navigation__links-->
          <div class="mdl-layout-spacer"></div>
+         <!--Links to other pages-->
          <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="blog.html">Blog</a>
             <a class="mdl-navigation__link" href="history.html">Our History</a>
@@ -32,8 +35,11 @@
             <a class="mdl-navigation__link" href="sign_up.html">Sign Up</a>
          </nav>
       </div>
+      <!-- The div with class "mdl-layout__drawer" appears on mobile-->
       <div class="mdl-layout__drawer">
+        <!--The <span> tag allows for the text to be inline with everything else.  The <a> tag is for the link.-->
          <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemont Robotics</a></span>
+         <!--Links to other pages-->
          <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="blog.html">Blog</a>
             <a class="mdl-navigation__link" href="history.html">Our History</a>
@@ -43,27 +49,24 @@
          </nav>
       </div>
    </header>
-
    <!--Header End -->
 
-                  <!--Place your code between the header and footer -->
+
+                  <!--Place your code here between the header and footer -->
 
 
-
-
-
-
-   <!--Footer Begin-->
-
+   <!--Footer Begin utilizes the Google Material Design Lite mini footer-->
    <footer class="mdl-mini-footer">
+     <!--Will align all the way to the left.  Best for website name or logo.-->
       <div class="mdl-mini-footer__left-section">
          <div class="mdl-logo">Clairemonster Robotics</div>
+         <!--All of the links to other pages.  Best for linking contact, support, privacy policy, etc...-->
          <ul class="mdl-mini-footer__link-list">
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="#">Support</a></li>
          </ul>
       </div>
    </footer>
-
    <!-- Footer End-->
+
 </html>
