@@ -114,22 +114,34 @@
 	
 	/*Histoy page classes (Begin)*/
 	#history_grid .mdl-grid {
- 		max-width: 100vw;
+ 		width: 90%;
+	}
+	#history_current_year_roboName {
+		
+	}
+	.demo-card-square{
+  		width: 100%;
+  		height: 20vw;
+	}
+	#card_2015 .demo-card-square > .mdl-card__title{
+  		color: #fff;
+  		background: url('images/history_photos/2015.jpg');
+    		background-size: cover;
 	}
 	#card_2016 .demo-card-square > .mdl-card__title{
   		color: #fff;
   		background: url('images/history_photos/2016.jpg');
-    		background: 100% 100%;
+    		background-size: cover;
 	}
 	#card_2017 .demo-card-square > .mdl-card__title{
   		color: #fff;
   		background: url('images/history_photos/2017.jpg');
-    		background: 100% 100%;
+    		background-size: cover;
 	}
 	#card_2018 .demo-card-square > .mdl-card__title{
   		color: #fff;
   		background: url('images/history_photos/2018.jpg');
-    		background: 100% 100%;
+    		background-size: cover;
 	}
 	/*Histoy page classes (End)*/
 
