@@ -18,7 +18,8 @@ Step 3: To submit changes to GitHub, click on the button in the bottom right han
 Step 4: Click "Stage All" or manually select each change you want to submit
 Step 5: Type a message explaining what you changed
 Step 6: Click "Commit to master"
+Step 7: Click "Push" at the bottom right corner in Atom.
 
 
-Alternatively, you can download Brackets from http://brackets.io/
-You can then open the directory into Brackets and everytime you make a change switch back to GitHub Desktop and click "Commit to master" after including a message.
+Alternatively, you can download Brackets from http://brackets.io/, or any text editor you want.
+You can then open the cloned Repository from Step 1 into Brackets (It is stored in the "GitHub" folder inside documents on your computer) and every time you make a change switch back to GitHub Desktop and click "Commit to master" after including a message.
