@@ -1,147 +1,144 @@
 <!DOCTYPE html>
 <html lang="en" >
+   <!--Imported CSS-->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-deep_orange.min.css"/>
+   <link rel="stylesheet" href="css/headroom.css" />
+   <link rel="stylesheet" href="css/main.css" />
+   <!--Imported Javascript-->
+   <script  src="js/index.js"></script>
+   <script src="js/headroom.js"></script>
+   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+   <!--Title-->
+   <head>
+      <meta charset="UTF-8">
+      <title>Clairemont Robotics</title>
+   </head>
+   <div class="mdl-layout">
 
-<!--Imported CSS-->
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-deep_orange.min.css"/>
-<link rel="stylesheet" href="css/headroom.css" />
-<link rel="stylesheet" href="css/main.css" />
+     <!-- Header Utilizes the Google Material Design Lite header feature.
+          The headroom class allows the header bar to appear upon scrolling up -->
+     <header class="mdl-layout__header headroom">
+        <div class="mdl-layout__header-row">
+          <!--The <span> tag allows for the text to be inline with everything else.  The <a> tag is for the link.-->
+           <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemonster Robotics</a></span>
+           <!--Space between title and navigation__links-->
+           <div class="mdl-layout-spacer"></div>
+           <!--Links to other pages-->
+           <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="blog.html">Blog</a>
+              <a class="mdl-navigation__link" href="history.html">Our History</a>
+              <a class="mdl-navigation__link" href="contact.html">Contact</a>
+              <a class="mdl-navigation__link" href="sponsors.html">Sponsers</a>
+              <a class="mdl-navigation__link" href="sign_up.html">Sign Up</a>
+           </nav>
+        </div>
+        <!-- The div with class "mdl-layout__drawer" appears on mobile-->
+        <div class="mdl-layout__drawer">
+          <!--The <span> tag allows for the text to be inline with everything else.  The <a> tag is for the link.-->
+           <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemont Robotics</a></span>
+           <!--Links to other pages-->
+           <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="blog.html">Blog</a>
+              <a class="mdl-navigation__link" href="history.html">Our History</a>
+              <a class="mdl-navigation__link" href="contact.html">Contact</a>
+              <a class="mdl-navigation__link" href="sponsors.html">Sponsors</a>
+              <a class="mdl-navigation__link" href="sign_up.html">Sign Up</a>
+           </nav>
+        </div>
+     </header>
+     <!--Header End -->
 
-<!--Imported Javascript-->
-<script  src="js/index.js"></script>
-<script src="js/headroom.js"></script>
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
-<!--Title-->
-<head>
-  <meta charset="UTF-8">
-  <title>Clairemont Robotics</title>
-</head>
 
 
+   <div class="mdl-layout">
+   <section class="hero">
+      <h1>Clairemonster </h1>
+   </section>
 
-        <div class="mdl-layout">
-        <div id="header"></div>
-         
-        <!-- <div id="headerContent"></div> -->
-
-               <!-- Header -->
-   <header class="mdl-layout__header headroom">
-      <div class="mdl-layout__header-row">
-         <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemont Robotics</a></span>
-         <div class="mdl-layout-spacer"></div>
-         <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="blog.html">Blog</a>
-            <a class="mdl-navigation__link" href="history.html">Our History</a>
-            <a class="mdl-navigation__link" href="contact.html">Contact</a>
-            <a class="mdl-navigation__link" href="sponsors.html">Sponsers</a>
-            <a class="mdl-navigation__link" href="sign_up.html">Sign Up</a>
-         </nav>
+   <!--This section outlines the "Our Team" segment -->
+   <!--A "card" is defined by a section with a background and a shadow. There are three parts.
+       A title, and two boxes layed out horizontally to each other-->
+   <h2 class="card_title">OUR TEAM</h2>
+   <!--Grid which holds an image on one side and text on the other-->
+   <div class="mdl-grid mdl-shadow--4dp card_format">
+      <!--IMAGE-->
+      <div class="mdl-cell mdl-cell--6-col our_team_image"></div>
+      <!--TEXT-->
+      <div class="mdl-cell mdl-cell--6-col card_text">
+         We are FIRST Robotics team Clairemonster 5474.  We are dedicated to robotics in all forms.  We focus on designing, building, programming, and marketing our robots in order to propogate robotics.  It is our philosophy that everybody can do anything they want on our team, so we teach them what they want to learn.
+         <!-- Accent-colored raised button with ripple -->
+         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+         Click for more info
+         </button>
       </div>
-      <div class="mdl-layout__drawer">
-         <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemont Robotics</a></span>
-         <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="blog.html">Blog</a>
-            <a class="mdl-navigation__link" href="history.html">Our History</a>
-            <a class="mdl-navigation__link" href="contact.html">Contact</a>
-            <a class="mdl-navigation__link" href="sponsors.html">Sponsors</a>
-            <a class="mdl-navigation__link" href="sign_up.html">Sign Up</a>
-         </nav>
+   </div>
+   <!--END SEGMENT-->
+
+   <!--This section outlines the "Our Team" segment -->
+   <!--A "card" is defined by a section with a background and a shadow. There are three parts.
+       A title, and two boxes layed out horizontally to each other-->
+   <h2 class="card_title">OUR CURRENT YEAR</h2>
+   <!--Grid which holds an image on one side and text on the other-->
+   <div class="mdl-grid mdl-shadow--4dp card_format">
+      <!--TEXT-->
+      <div class="mdl-cell mdl-cell--6-col card_text">
+         It is our fifth year as a FIRST team.  This year is our first without the students who founded our team. Last year we were semi-finalists for the first time in team history, and hope to continue our success.
+         <br></br>
+         <!-- Colored raised button with ripple -->
+         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+         Click for more info
+         </button>
       </div>
-   </header>
-   
-   <!--Header End -->
+      <!--IMAGE-->
+      <div class="mdl-cell mdl-cell--6-col current_image"></div>
+   </div>
+   <!--END SEGMENT-->
 
+   <!-- This section is meant for basic contact information. -->
+   <h2 class="card_title">Contact</h2>
+   <div class="contact">
 
-                  <div class="mdl-layout">
-                    <section class="hero">
-                        <h1>Clairemonster </h1>
-                    </section>
+      <!--Email contact information link will open up a new tab with default email service and type "Hello" as the Subject
+          This is done through the "mailto:" at the beginning of email.  There is a Gmail logo to indicate as an email.-->
+      <div class="card_text">
+         <a href="mailto:clairemontrobotics@gmail.com?Subject=Hello">
+            <image src="css/images/gmail-icon.png" width="20px" height="20px"></image>
+            clairemontrobotics@gmail.com
+         </a>
+      </div>
+      <!--Facebook contact information link will open up a new tab to our Facebook page.
+          It opens to a new page because of the target="_blank" inside the <a> tag-->
+      <div class="card_text">
+         <a href="https://www.facebook.com/ClairemonsterRobotics/" target="_blank">
+            <image src="css/images/facebook-icon.png" width="20px" height="20px"></image>
+            Clairemonster Robotics
+         </a>
+      </div>
+      <!--Instagram contact information link will open up a new tab to our Instagram page.
+          It opens to a new page because of the target="_blank" inside the <a> tag-->
+      <div class="card_text">
+         <a href="https://www.instagram.com/clairemonster5474/">
+            <image src="css/images/instagram-icon.png" width="20px" height="20px"></image>
+            Clairemonster5474
+         </a>
+      </div>
+   </div>
 
-                    <!--This section outlines the "Our Team" segment -->
-                    <h2 class="card_title">OUR TEAM</h2>
-                    <!--Grid which holds an image on one side and text on the other-->
-                    <div class="mdl-grid mdl-shadow--4dp card_format">
+   <!-- CSS class to put 25px  of padding between contact info and footer-->
+   <div class="spacer"></div>
 
-                      <!--IMAGE-->
-                      <div class="mdl-cell mdl-cell--6-col our_team_image"></div>
-
-                        <!--TEXT-->
-                        <div class="mdl-cell mdl-cell--6-col card_text">
-                        We are FIRST Robotics team Clairemonster 5474.  We are dedicated to robotics in all forms.  We focus on designing, building, programming, and marketing our robots in order to propogate robotics.  It is our philosophy that everybody can do anything they want on our team, so we teach them what they want to learn.
-                        
-
-                        <!-- Accent-colored raised button with ripple -->
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                          Click for more info
-                        </button>
-                      </div>
-                    </div>
-                    <!--END SEGMENT-->  
-                    
-
-
-                    <!--This section outlines the "Our Team" segment -->
-                    <h2 class="card_title">OUR CURRENT YEAR</h2>
-                    <!--Grid which holds an image on one side and text on the other-->
-                    <div class="mdl-grid mdl-shadow--4dp card_format">
-
-                      <!--TEXT-->
-                      <div class="mdl-cell mdl-cell--6-col card_text">
-                        It is our fifth year as a FIRST team.  This year is our first without the students who founded our team. Last year we were semi-finalists for the first time in team history, and hope to continue our success.
-
-                      <br></br>
-
-                        <!-- Colored raised button with ripple -->
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-                          Click for more info
-                        </button>
-                      </div>
-
-                      <!--IMAGE-->
-                      <div class="mdl-cell mdl-cell--6-col current_image"></div>
-                    </div>
-                    <!--END SEGMENT-->     
-
-                    <h2 class="card_title">Contact</h2>
-
-
-                      <div class="contact">
-                        <!--TEXT-->
-                        <div class="card_text">
-                          <a href="mailto:clairemontrobotics@gmail.com?Subject=Hello">
-                            <image src="css/images/gmail-icon.png" width="20px" height="20px"></image> clairemontrobotics@gmail.com
-                          </a>
-                        </div>
-                        <div class="card_text">
-                          <a href="https://www.facebook.com/ClairemonsterRobotics/">
-                            <image src="css/images/facebook-icon.png" width="20px" height="20px"></image> Clairemonster Robotics
-                          </a>  
-                        </div>
-                        <div class="card_text">
-                          <a href="https://www.instagram.com/clairemonster5474/">
-                            <image src="css/images/instagram-icon.png" width="20px" height="20px"></image> Clairemonster5474
-                          </a>  
-                        </div>
-                      </div>
-                
-
-
-
-
-                  <div class="spacer"></div> 
-
-   <!--Footer Begin-->
-   
+   <!--Footer Begin utilizes the Google Material Design Lite mini footer-->
    <footer class="mdl-mini-footer">
+     <!--Will align all the way to the left.  Best for website name or logo.-->
       <div class="mdl-mini-footer__left-section">
          <div class="mdl-logo">Clairemonster Robotics</div>
+         <!--All of the links to other pages.  Best for linking contact, support, privacy policy, etc...-->
          <ul class="mdl-mini-footer__link-list">
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="#">Support</a></li>
          </ul>
       </div>
    </footer>
-
    <!-- Footer End-->
 </html>
