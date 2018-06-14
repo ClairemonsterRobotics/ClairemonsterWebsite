@@ -113,7 +113,7 @@
 	}	
 	
 	/*Histoy page classes (Begin)*/
-	#history_grid .mdl-grid {
+	#history_grid{
  		width: 90%;
 	}
 	.mdl-card__title-text {
