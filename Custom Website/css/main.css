@@ -116,8 +116,9 @@
 	#history_grid .mdl-grid {
  		width: 90%;
 	}
-	#history_current_year_roboName {
-		
+	.mdl-card__title-text {
+		padding: 5px;
+		background-color: rgba(0,0,0,.7);
 	}
 	.demo-card-square{
   		width: 100%;
