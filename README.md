@@ -1,7 +1,7 @@
 # Clairemonster-Website
 
 
-##Important Links
+## Important Links
 <a href="http://clairemontrobotics.com">clairemontrobotics.com</a>
 https://getmdl.io/components/index.html
 https://console.aws.amazon.com/s3/buckets/clairemontrobotics.com/?region=us-east-2&tab=overview
@@ -32,6 +32,6 @@ Alternatively, you can download Brackets from http://brackets.io/, or any text e
 You can then open the cloned Repository from Step 1 into Brackets (the repository is stored in the "GitHub" folder inside documents on your computer) and every time you make a change switch back to GitHub Desktop and click "Commit to master" after including a message.
 
 
-##Editing the Website
+## Editing the Website
 
 Please copy and paste the header/footer code from the basicPage.html so that all of them are consistent throughout the website.
