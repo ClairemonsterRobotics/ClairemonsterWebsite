@@ -20,3 +20,7 @@ Folder-less files in src are html file pages for the Website
 css folder holds all of the CSS and the images in the "images" folder
 
 js folder holds all of the JavaScript
+
+## Commenting
+
+The goal of this repository is not only to update our website, but also to aid other FRC teams to create websites.  When you make changes, please comment on what it means so that people who are learning can understand.  No amount of commenting and description is too much.
