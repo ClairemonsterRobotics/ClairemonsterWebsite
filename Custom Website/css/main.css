@@ -111,6 +111,10 @@
 	.contact_text{
 		color: #FF00CC;
 	}	
+	#main_link {
+		color: #FFFFFF;
+		text-decoration: none;
+	}
 	
 	/*Histoy page classes (Begin)*/
 	#history_grid{
