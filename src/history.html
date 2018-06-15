@@ -11,19 +11,33 @@
    <script  src="js/index.js"></script>
    <script src="js/headroom.js"></script>
    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-   <!--Title-->
+
+   <!--Title in tab-->
    <head>
-      <meta charset="UTF-8">
-      <title>Clairemont Robotics</title>
+     <meta charset="UTF-8">
+     <title>Clairemont Robotics</title>
+     <!--All of the images to correctly display logo in tab for all browsers
+         All favicons created with: https://realfavicongenerator.net -->
+     <link rel="apple-touch-icon" sizes="180x180" href="css/images/favicons/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="css/images/favicons/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="css/images/favicons/favicon-16x16.png">
+     <link rel="manifest" href="css/images/favicons/site.webmanifest">
+     <link rel="mask-icon" href="css/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+     <meta name="msapplication-TileColor" content="#da532c">
+     <meta name="theme-color" content="#ffffff">
+     <!--END FAVICONS-->
    </head>
+
    <div class="mdl-layout">
-      <div id="header"></div>
-      <!-- <div id="headerContent"></div> -->
-      <!-- Header -->
+      <!-- Header Utilizes the Google Material Design Lite header feature.
+           The headroom class allows the header bar to appear upon scrolling up -->
       <header class="mdl-layout__header headroom">
          <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemont Robotics</a></span>
+           <!--The <span> tag allows for the text to be inline with everything else.  The <a> tag is for the link.-->
+            <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemonster Robotics</a></span>
+            <!--Space between title and navigation__links-->
             <div class="mdl-layout-spacer"></div>
+            <!--Links to other pages-->
             <nav class="mdl-navigation">
                <a class="mdl-navigation__link" href="blog.html">Blog</a>
                <a class="mdl-navigation__link" href="history.html">Our History</a>
@@ -32,22 +46,26 @@
                <a class="mdl-navigation__link" href="sign_up.html">Sign Up</a>
             </nav>
          </div>
+         <!-- The div with class "mdl-layout__drawer" appears on mobile-->
          <div class="mdl-layout__drawer">
+           <!--The <span> tag allows for the text to be inline with everything else.  The <a> tag is for the link.-->
             <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemont Robotics</a></span>
+            <!--Links to other pages-->
             <nav class="mdl-navigation">
                <a class="mdl-navigation__link" href="blog.html">Blog</a>
                <a class="mdl-navigation__link" href="history.html">Our History</a>
                <a class="mdl-navigation__link" href="contact.html">Contact</a>
-               <a class="mdl-navigation__link" href="sponsors.html">Sponsers</a>
+               <a class="mdl-navigation__link" href="sponsors.html">Sponsors</a>
                <a class="mdl-navigation__link" href="sign_up.html">Sign Up</a>
             </nav>
          </div>
       </header>
       <!--Header End -->
+
       <!-- Years grid -->
       <div id="history_grid" class="mdl-grid">
          <div class="mdl-cell mdl-cell--4-col">
-            <!-- Rectangle card (2018) (Current Year)--> 
+            <!-- Rectangle card (2018) (Current Year)-->
             <div id="card_2018">
                <div class="demo-card-square mdl-card mdl-shadow--2dp">
                   <div class="mdl-card__title mdl-card--expand">
@@ -65,7 +83,7 @@
             </div>
          </div>
          <div class="mdl-cell mdl-cell--4-col">
-            <!-- Square card (2017)--> 
+            <!-- Square card (2017)-->
             <div id="card_2017">
                <div class="demo-card-square mdl-card mdl-shadow--2dp">
                   <div class="mdl-card__title mdl-card--expand">
@@ -101,7 +119,7 @@
             </div>
          </div>
          <div class="mdl-cell mdl-cell--4-col">
-            <!-- Square card (2015)--> 
+            <!-- Square card (2015)-->
             <div class="demo-card-square mdl-card mdl-shadow--2dp">
                <div class="mdl-card__title mdl-card--expand">
                   <h2 class="mdl-card__title-text">Sully</h2>
@@ -118,15 +136,18 @@
          </div>
       </div>
    </div>
-   <!--Footer Begin-->
+   <!--Footer Begin
+   Utilizes the Google Material Design Lite mini footer-->
    <footer class="mdl-mini-footer">
-      <div class="mdl-mini-footer__left-section">
-         <div class="mdl-logo">Clairemonster Robotics</div>
-         <ul class="mdl-mini-footer__link-list">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Support</a></li>
-         </ul>
-      </div>
+     <!--Will align all the way to the left.  Best for website name or logo.-->
+     <div class="mdl-mini-footer__left-section">
+       <div class="mdl-logo">Clairemonster Robotics</div>
+       <!--All of the links to other pages.  Best for linking contact, support, privacy policy, etc...-->
+       <ul class="mdl-mini-footer__link-list">
+         <li><a href="contact.html">Contact</a></li>
+         <li><a href="support.html">Support Us</a></li>
+       </ul>
+     </div>
    </footer>
+   <!-- Footer End-->
 </html>
-
