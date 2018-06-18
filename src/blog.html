@@ -62,34 +62,54 @@
   </header>
   <!--Header End -->
   <h1 class="card_title">Blog</h1>
-  <ul class='mdl-list'>
 
-    <!--List of links to parts of the page-->
-    <li class="mdl-list__item">
-      <span class="mdl-list__item-primary-content">
-        <!--"Social Media Posts" with Facebook and Instagram icon inline-->
-        <a href="#Social_Media">
-          Social Media Posts
-          <image src="css/images/facebook-icon.png" width="20px" height="20px"></image>
-          <image src="css/images/instagram-icon.png" width="20px" height="20px"></image>
-        </a>
-      </span>
-    </li>
+  <div id="blog_grid" class="mdl-grid">
 
-    <li class="mdl-list__item">
-      <span class="mdl-list__item-primary-content"></span>
-    </li>
-    <li class="mdl-list__item">
-      <span class="mdl-list__item-primary-content"></span>
-    </li>
-  </ul>
+    <div class="mdl-cell mdl-cell--4-col">
+      <div class="demo-card-square mdl-card mdl-shadow--2dp">
+        <div id="social_media_post" class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">Social Media Posts</h2>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+           <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#Social_Media">View all posts</a>
+        </div>
+      </div>
+    </div>
 
+    <div class="mdl-cell mdl-cell--6-col">
+      <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+        <div id="blog_post" class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">Written Blog</h2>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+           <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#Social_Media">View all posts</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- SUBTITLE -->
   <h2 class="card_title" id="Social_Media">Social Media</h2>
-    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FClairemonsterRobotics&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 
+  <!-- SOCIAL MEDIA GRID -->
+  <div id="social_media_grid" class="mdl-grid">
+    <!-- FACEBOOK PLUGIN-->
+    <div id="facebook" class="mdl-cell mdl-cell--4-col">
+      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FClairemonsterRobotics&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    </div>
+  </div>
+
+  <!-- SUBTITLE -->
+  <h2 class="card_title" id="Written_Blog">Written Blog</h2>
+
+  <!--YET TO BE CREATED-->
 
 <!--Place your code here between the header and footer -->
 
+<!-- CSS class to put 25px  of padding between contact info and footer-->
+<div class="spacer"></div>
 
 <!--Footer Begin
 Utilizes the Google Material Design Lite mini footer-->
