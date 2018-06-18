@@ -25,4 +25,4 @@ Folder-less files in "src" are html file pages for the Website
 
 The goal of this repository is not only to update our website, but also to aid other FRC teams to create websites.  When you make changes, please comment on what it means so that people who are learning can understand.  No amount of commenting and description is too much.
 
-Place all of the CSS from your page together in the main.css and comment around it to express which page it is designed for.
+Place all of the CSS from your page together in the main.css and comment around it to express which page it is designed for.  It should be formatted like, "<page_name>.html (Begin)" and then the same thing for the end.  Please look at the main.css document for more examples.
