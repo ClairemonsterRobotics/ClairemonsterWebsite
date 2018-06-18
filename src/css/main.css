@@ -1,5 +1,5 @@
 <style type="text/css">
-	
+
 	.headroom {
 	    z-index: 9998;
 	    top: 0;
@@ -35,6 +35,70 @@
 	  transition: .5s;
 	}
 
+
+
+
+	/* All use (Begin) */
+
+	.card_title{
+		padding-top:50px;
+		align-self: center;
+		font-weight: bold;
+		font-color: 'mdl-color-accent';
+	}
+
+	.card_format{
+		background: lightgray;
+		width:90vw;
+		height:40vh;
+	}
+
+	.card_text{
+		color: black;
+		font-size: 20px;
+	}
+
+	.spacer{
+		padding:25px;
+	}
+
+	#main_link {
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+
+	/* All use (End) */
+
+
+
+
+	/* Main.html (Begin) */
+
+	.hero h1{
+		/* Align and style text */
+		text-align: center;
+		color: white;
+		font-weight: bold;
+		font-size: 14.8vw;
+	}
+
+
+	.our_team_image{
+		background-image: url('images/our_team.JPG');
+		padding:10px;
+		background-position:center;
+		background-size:cover;
+		position:relative;
+	}
+
+	.current_image{
+		background-image: url('images/current.JPG');
+		padding:10px;
+		background-position:center;
+		background-size:cover;
+		position:relative;
+	}
+
 	.hero{
 		/* Max width */
 		width:100vw;
@@ -56,51 +120,12 @@
     	background-attachment: fixed;
 	}
 
-	.hero h1{
-		/* Align and style text */
-		text-align: center;
-		color: white;
-		font-weight: bold;
-		font-size: 14.8vw;
-	}
+	/* Main.html (End) */
 
-	.card_title{
-		padding-top:50px;
-		align-self: center;
-		font-weight: bold;
-		font-color: 'mdl-color-accent';
-	}
 
-	.card_format{
-		background: lightgray;
-		width:90vw;
-		height:40vh;
-	}
 
-	.card_text{
-		color: black;
-		font-size: 20px;
-	}
 
-	.our_team_image{
-		background-image: url('images/our_team.JPG');
-		padding:10px;
-		background-position:center;
-		background-size:cover;
-		position:relative;
-	}
-
-	.current_image{
-		background-image: url('images/current.JPG');
-		padding:10px;
-		background-position:center;
-		background-size:cover;
-		position:relative;
-	}
-
-	.spacer{
-		padding:25px;
-	}
+	/* Contact.html (End) */
 
 	.contact{
 		margin: 0 auto;
@@ -110,12 +135,13 @@
 
 	.contact_text{
 		color: #FF00CC;
-	}	
-	#main_link {
-		color: #FFFFFF;
-		text-decoration: none;
 	}
-	
+
+	/* Contact.html (End) */
+
+
+
+
 	/*Histoy page classes (Begin)*/
 	#history_grid{
  		width: 90%;
@@ -150,11 +176,15 @@
 	}
 	/*Histoy page classes (End)*/
 
+
+
+
 	/* Sign-up classes (Begin)*/
 	.form{
 		width:100vw;
 		height:100vh;
 	}
 	/* Sign-up classes (End) */
-</style>
 
+
+</style>
