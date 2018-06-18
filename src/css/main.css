@@ -39,7 +39,6 @@
 
 
 	/* All use (Begin) */
-
 	.card_title{
 		padding-top:50px;
 		align-self: center;
@@ -62,18 +61,29 @@
 		padding:25px;
 	}
 
+	.mdl-card__title-text {
+		padding: 5px;
+		background-color: rgba(0,0,0,.7);
+	}
+
+	.demo-card-square{
+			width: 100%;
+			height: 20vw;
+	}
+	.demo-card-wide{
+			width: 50vw;
+			height: 20vw;
+	}
 	#main_link {
 		color: #FFFFFF;
 		text-decoration: none;
 	}
-
 	/* All use (End) */
 
 
 
 
 	/* Main.html (Begin) */
-
 	.hero h1{
 		/* Align and style text */
 		text-align: center;
@@ -119,14 +129,12 @@
    		/* Parallax image setting*/
     	background-attachment: fixed;
 	}
-
 	/* Main.html (End) */
 
 
 
 
 	/* Contact.html (End) */
-
 	.contact{
 		margin: 0 auto;
 		width:90vw;
@@ -136,23 +144,14 @@
 	.contact_text{
 		color: #FF00CC;
 	}
-
 	/* Contact.html (End) */
 
 
 
 
-	/*Histoy page classes (Begin)*/
+	/*History.html (Begin)*/
 	#history_grid{
  		width: 90%;
-	}
-	.mdl-card__title-text {
-		padding: 5px;
-		background-color: rgba(0,0,0,.7);
-	}
-	.demo-card-square{
-  		width: 100%;
-  		height: 20vw;
 	}
 	#card_2015 .demo-card-square > .mdl-card__title{
   		color: #fff;
@@ -174,17 +173,42 @@
   		background: url('images/history_photos/2018.jpg');
     		background-size: cover;
 	}
-	/*Histoy page classes (End)*/
+	/*Histor.html (End)*/
 
 
 
 
-	/* Sign-up classes (Begin)*/
+	/* sign_up.html (Begin)*/
 	.form{
 		width:100vw;
 		height:100vh;
 	}
-	/* Sign-up classes (End) */
+	/* sign_up.html (End) */
 
 
+
+
+	/* blog.html (Begin) */
+	#social_media_post{
+		color: #fff;
+		background: url('images/example_post.png');
+		background-size: cover;
+	}
+	#blog_post{
+		color: #fff;
+		background: url('images/blogging.png');
+		background-size: cover;
+	}
+	#blog_grid{
+		width:80vw;
+	}
+	#social_media_grid{
+		position: relative;
+		width:80vw;
+	}
+	#facebook{
+		width:500px;
+	}
+
+	/* blog.html (End) */
 </style>
