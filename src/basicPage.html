@@ -1,70 +1,68 @@
-
-
 <!DOCTYPE html>
 <html lang="en" >
-<!--Imported CSS-->
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-deep_orange.min.css"/>
-<link rel="stylesheet" href="css/headroom.css" />
-<link rel="stylesheet" href="css/main.css" />
-<!--Imported Javascript-->
-<script  src="js/index.js"></script>
-<script src="js/headroom.js"></script>
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--Imported CSS-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-deep_orange.min.css"/>
+  <link rel="stylesheet" href="css/headroom.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <!--Imported Javascript-->
+  <script  src="js/index.js"></script>
+  <script src="js/headroom.js"></script>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!--Title in tab-->
-<head>
-  <meta charset="UTF-8">
-  <title>Clairemont Robotics</title>
-  <!--All of the images to correctly display logo in tab for all browsers
-      All favicons created with: https://realfavicongenerator.net -->
-  <link rel="apple-touch-icon" sizes="180x180" href="css/images/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="css/images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="css/images/favicons/favicon-16x16.png">
-  <link rel="manifest" href="css/images/favicons/site.webmanifest">
-  <link rel="mask-icon" href="css/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <!--END FAVICONS-->
+  <!--Title in tab-->
+  <head>
+    <meta charset="UTF-8">
+    <title>Clairemont Robotics</title>
+    <!--All of the images to correctly display logo in tab for all browsers
+        All favicons created with: https://realfavicongenerator.net -->
+    <link rel="apple-touch-icon" sizes="180x180" href="css/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="css/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="css/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--END FAVICONS-->
 
-  <!-- Script to allow same header over all pages.  Test in Microsoft Edge.  Header file in header.html -->
-  <script>
-    $.get("header.html", function(data){
-        $("#header-placeholder").replaceWith(data);
-    });
-  </script>
+    <!-- Script to allow same header over all pages.  Test in Microsoft Edge.  Header file in header.html -->
+    <script>
+      $.get("header.html", function(data){
+          $("#header-placeholder").replaceWith(data);
+      });
+    </script>
 
-  <!-- Script to allow same footer over all pages.  Test in Microsoft Edge.  Footer file in footer.html -->
-  <script>
-    $.get("footer.html", function(data){
-        $("#footer-placeholder").replaceWith(data);
-    });
-  </script>
+    <!-- Script to allow same footer over all pages.  Test in Microsoft Edge.  Footer file in footer.html -->
+    <script>
+      $.get("footer.html", function(data){
+          $("#footer-placeholder").replaceWith(data);
+      });
+    </script>
 
-</head>
+  </head>
 
-<!-- Beginning of the body of the website -->
-<div class="mdl-layout">
+  <!-- Beginning of the body of the website -->
+  <div class="mdl-layout">
 
-    <!-- Header Start (Will be pulled from script in <head>)-->
-    <div id="header-placeholder"></div>
-    <!-- Header End -->
+        <!-- Header Start (Will be pulled from script in <head>)-->
+      <div id="header-placeholder"></div>
+        <!-- Header End -->
 
-  <!-- Title of page -->
-  <h1 class="card_title">TITLE</h1>
-
-
-
-  <!--Place your code here between the header and footer -->
+      <!-- Title of page -->
+      <h1 class="card_title">TITLE</h1>
 
 
 
-  <!-- CSS class to put 25px  of padding between contact info and footer-->
-  <div class="spacer"></div>
+      <!--Place your code here between the header and footer -->
 
-  <!--Footer Begin (Will be pulled from script in <head>)-->
-  <div id="footer-placeholder"></div>
-  <!-- Footer End-->
 
-  </html>
+
+      <!-- CSS class to put 25px  of padding between contact info and footer-->
+      <div class="spacer"></div>
+
+      <!--Footer Begin (Will be pulled from script in <head>)-->
+      <div id="footer-placeholder"></div>
+      <!-- Footer End-->
+  </div>
+</html>
