@@ -11,6 +11,8 @@
 <script  src="js/index.js"></script>
 <script src="js/headroom.js"></script>
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
 <!--Title in tab-->
 <head>
@@ -26,41 +28,29 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <!--END FAVICONS-->
+
+  <!-- Script to allow same header over all pages.  Test in Microsoft Edge.  Header file in header.html -->
+  <script>
+    $.get("header.html", function(data){
+        $("#header-placeholder").replaceWith(data);
+    });
+  </script>
+
+  <!-- Script to allow same footer over all pages.  Test in Microsoft Edge.  Footer file in footer.html -->
+  <script>
+    $.get("footer.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+    });
+  </script>
+
 </head>
 
-        <div class="mdl-layout">
-          <!-- Header Utilizes the Google Material Design Lite header feature.
-          The headroom class allows the header bar to appear upon scrolling up -->
-          <header class="mdl-layout__header headroom">
-            <div class="mdl-layout__header-row">
-              <!--The <span> tag allows for the text to be inline with everything else.  The <a> tag is for the link.-->
-              <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemonster Robotics</a></span>
-              <!--Space between title and navigation__links-->
-              <div class="mdl-layout-spacer"></div>
-              <!--Links to other pages-->
-              <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="blog.html">Blog</a>
-                <a class="mdl-navigation__link" href="history.html">Our History</a>
-                <a class="mdl-navigation__link" href="contact.html">Contact</a>
-                <a class="mdl-navigation__link" href="sponsors.html">Sponsors</a>
-                <a class="mdl-navigation__link" href="sign_up.html">Sign Up</a>
-              </nav>
-            </div>
-            <!-- The div with class "mdl-layout__drawer" appears on mobile-->
-            <div class="mdl-layout__drawer">
-              <!--The <span> tag allows for the text to be inline with everything else.  The <a> tag is for the link.-->
-              <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemont Robotics</a></span>
-              <!--Links to other pages-->
-              <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="blog.html">Blog</a>
-                <a class="mdl-navigation__link" href="history.html">Our History</a>
-                <a class="mdl-navigation__link" href="contact.html">Contact</a>
-                <a class="mdl-navigation__link" href="sponsors.html">Sponsors</a>
-                <a class="mdl-navigation__link" href="sign_up.html">Sign Up</a>
-              </nav>
-            </div>
-          </header>
-          <!--Header End -->
+<!-- Beginning of the body of the website -->
+<div class="mdl-layout">
+
+    <!-- Header Start (Will be pulled from script in <head>)-->
+    <div id="header-placeholder"></div>
+    <!-- Header End -->
 
            <!-- Right aligned menu below button -->
 <button id="demo-menu-lower-right"
@@ -79,19 +69,8 @@
 
 
 
-<!--Footer Begin
-Utilizes the Google Material Design Lite mini footer-->
-<footer class="mdl-mini-footer">
-  <!--Will align all the way to the left.  Best for website name or logo.-->
-  <div class="mdl-mini-footer__left-section">
-    <div class="mdl-logo">Clairemonster Robotics</div>
-    <!--All of the links to other pages.  Best for linking contact, support, privacy policy, etc...-->
-    <ul class="mdl-mini-footer__link-list">
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="support.html">Support Us</a></li>
-    </ul>
-  </div>
-</footer>
+<!--Footer Begin (Will be pulled from script in <head>)-->
+<div id="footer-placeholder"></div>
 <!-- Footer End-->
 
 </html>
