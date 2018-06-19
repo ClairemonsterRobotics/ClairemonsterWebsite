@@ -10,6 +10,29 @@ If you would like to work on new pages, we plan on adding the following pages in
 2. A fully functioning blog which will be updated with posts from Instagram and Facebook along with the occasional article.
 3. A page where people can donate/support our team
 
+## Getting started with editing
+To work on this repository, download GitHub desktop at: https://desktop.github.com/
+Also download Atom text editor located at: https://atom.io/
+
+To use GitHub desktop, sign into your account.  
+Step 1: Click on "File" > "Clone Repository"
+
+Step 2: Click on "Repository" > "Open in Atom"
+
+Step 3: To submit changes to GitHub, click on the button in the bottom right hand corner that says "file" with the number of files you have edited.  
+
+Step 4: Click "Stage All" or manually select each change you want to submit
+
+Step 5: Type a message explaining what you changed
+
+Step 6: Click "Commit to master"
+
+Step 7: Click "Push" at the bottom right corner in Atom.
+
+
+Alternatively, you can download Brackets from http://brackets.io/, or any text editor you want.
+You can then open the cloned Repository from Step 1 into Brackets (the repository is stored in the "GitHub" folder inside documents on your computer) and every time you make a change switch back to GitHub Desktop and click "Commit to master" after including a message.
+
 ## File Structure
 All files are stored under "ClairemonsterWebsite"
 
