@@ -15,4 +15,4 @@ Format all of your HTML code with: https://www.freeformatter.com/html-formatter.
 
 ## Editing the Website
 
-Please copy and paste the code from the basicPage.html so that all of the pages are consistent throughout the website.  Read more in CONTRIBUTING.md
+Please copy and paste the code from the basicPage.html so that all of the pages are consistent throughout the website.  Read more in [CONTRIBUTING.md](https://github.com/FRCClairemonsters/ClairemonsterWebsite/blob/master/CONTRIBUTING.md)
