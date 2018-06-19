@@ -149,31 +149,60 @@
 
 
 
-	/*History.html (Begin)*/
-	#history_grid{
- 		width: 90%;
-	}
-	#card_2015 .demo-card-square > .mdl-card__title{
-  		color: #fff;
-  		background: url('images/history_photos/2015.jpg');
-    		background-size: cover;
-	}
-	#card_2016 .demo-card-square > .mdl-card__title{
-  		color: #fff;
-  		background: url('images/history_photos/2016.jpg');
-    		background-size: cover;
-	}
-	#card_2017 .demo-card-square > .mdl-card__title{
-  		color: #fff;
-  		background: url('images/history_photos/2017.jpg');
-    		background-size: cover;
-	}
-	#card_2018 .demo-card-square > .mdl-card__title{
-  		color: #fff;
-  		background: url('images/history_photos/2018.jpg');
-    		background-size: cover;
-	}
-	/*Histor.html (End)*/
+	
+/*History.html (Begin)*/
+ #history_articles h1{
+     text-align: center;
+     margin-top: 20px;
+     font-size: 60px;
+}
+ hr{
+     margin-left: 6.3vw;
+     margin-right: 6.3vw;
+}
+ #history_articles p{
+     text-align: left;
+     margin-right: 6.3vw;
+     margin-left: 50px;
+     color: #000000;
+     font-size: 20px;
+}
+ #history_articles iframe{
+     margin-left: 6.3vw;
+     width: 48vw;
+     height: 27vw;
+}
+ #history_articles img{
+     width: 35vw;
+     height: auto;
+     margin-left: 6.3vw;
+     margin-right: 20px;
+     display: block;
+}
+ #history_grid{
+     width: 90%;
+}
+ #card_2015 .demo-card-square > .mdl-card__title{
+     color: #fff;
+     background: url('images/history_photos/2015.jpg');
+     background-size: cover;
+}
+ #card_2016 .demo-card-square > .mdl-card__title{
+     color: #fff;
+     background: url('images/history_photos/2016.jpg');
+     background-size: cover;
+}
+ #card_2017 .demo-card-square > .mdl-card__title{
+     color: #fff;
+     background: url('images/history_photos/2017.jpg');
+     background-size: cover;
+}
+ #card_2018 .demo-card-square > .mdl-card__title{
+     color: #fff;
+     background: url('images/history_photos/2018.jpg');
+     background-size: cover;
+}
+/*History.html (End)*/
 
 
 
