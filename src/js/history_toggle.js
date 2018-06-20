@@ -1,7 +1,8 @@
 function history_button(year) {
     close_others();
     document.getElementById("article_"+year).style.display = "";
-    window.scrollTo(0, 0);
+    var elmnt = document.getElementById("article-title");
+    elmnt.scrollIntoView(); 
 }
 
 function close_others(){
@@ -14,4 +15,8 @@ function close_others(){
 window.onload = function() {
     close_others();
     document.getElementById("article_2018").style.display = "";
+}
+
+function expandCard(year){
+    
 }

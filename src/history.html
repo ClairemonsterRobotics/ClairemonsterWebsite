@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" >
-  <!--Imported CSS-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-deep_orange.min.css"/>
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/headroom.css" />
-  <!--Imported Javascript-->
-  <script  src="js/index.js"></script>
-  <script  src="js/headroom.js"></script>
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<html lang="en">
+<!--Imported CSS-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-deep_orange.min.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/headroom.css" />
+<!--Imported Javascript-->
+<script src="js/index.js"></script>
+<script src="js/headroom.js"></script>
+<script src="js/history_toggle.js"></script>
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <!--Title in tab-->
-  <head>
+<!--Title in tab-->
+
+<head>
     <meta charset="UTF-8">
     <title>Clairemont Robotics</title>
     <!--All of the images to correctly display logo in tab for all browsers
@@ -28,32 +30,113 @@
 
     <!-- Script to allow same header over all pages.  Test in Microsoft Edge.  Header file in header.html -->
     <script>
-      $.get("header.html", function(data){
-          $("#header-placeholder").replaceWith(data);
-      });
+        $.get("header.html", function(data) {
+            $("#header-placeholder").replaceWith(data);
+        });
+
     </script>
 
     <!-- Script to allow same footer over all pages.  Test in Microsoft Edge.  Footer file in footer.html -->
     <script>
-      $.get("footer.html", function(data){
-          $("#footer-placeholder").replaceWith(data);
-      });
+        $.get("footer.html", function(data) {
+            $("#footer-placeholder").replaceWith(data);
+        });
+
     </script>
 
-  </head>
+</head>
 
-  <!-- Beginning of the body of the website -->
-  <div class="mdl-layout">
+<!-- Beginning of the body of the website -->
+<div class="mdl-layout">
 
-        <!-- Header Start (Will be pulled from script in <head>)-->
-      <div id="header-placeholder"></div>
-<!-- Header End -->
-      <!-- Title of page -->
-<h1 class="card_title">TITLE</h1>
+    <!-- Header Start (Will be pulled from script in <head>)-->
+    <div id="header-placeholder"></div>
+    <!-- Header End -->
+    <!-- Title of page -->
+    <h1 class="card_title">Team History</h1>
+    <!-- Years grid -->
+    <div id="history_grid" class="mdl-grid">
+        <!--To add a new card for the current year, copy the most recent card and paste it directly below this comment.
+             There are four things you must change in this html file. 1: update the comment on the new card to say 20xx.
+             delete (Current Year) on the card from the previous year. 2: underneath the comment you changed, also update the year.
+             3: Between the h2 tags, write the robots name for this year. 4: update the dates in the div which contains the text 20xx-20xx-->
+        <!-- Changes must also be made to the css document, which will be outlined there. -->
+        <!-- Square card (2018) (Current Year)-->
+        <div id="cell_2018" class="mdl-cell mdl-cell--4-col">
+            <div id="card_2018">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                        <h2 id="history_current_year_roboName" class="mdl-card__title-text">
+                            Shoryuken
+                        </h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        2017-2018
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <button onmouseover="expandCard(2018)" onclick="history_button(2018)" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Display Full History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Square card (2017)-->
+        <div id="cell_2017" class="mdl-cell mdl-cell--4-col">
+            <div id="card_2017">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                        <h2 class="mdl-card__title-text">
+                            Croctor Crank
+                        </h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        2016-2017
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <button onmouseover="expandCard(2017)" onclick="history_button(2017)" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Display Full History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Square card (2016)-->
+        <div id="cell_2016" class="mdl-cell mdl-cell--4-col">
+            <div id="card_2016">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                        <h2 class="mdl-card__title-text">
+                            Boctor Bank
+                        </h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        2015-2016
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <button onmouseover="expandCard(2016)" onclick="history_button(2016)" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Display Full History</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Square card (2015)-->
+        <div id="cell_2015" class="mdl-cell mdl-cell--4-col">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand">
+                    <h2 class="mdl-card__title-text">
+                        Sully
+                    </h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    2014-2015
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <button onmouseover="expandCard(2015)" onclick="history_button(2015)" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Display Full History</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Yearly Articles -->
+    <hr id="article-title">
     <div id="history_articles">
         <div id="article_2018">
-            <h1 class="card_title">2018 - Shoryukens last laugh</h1>
+            <h1>2018 - Shoryukens last laugh</h1>
             <table style="width:100%">
                 <td>
                     <img src="css/images/history_photos/2018_article.JPG">
@@ -77,7 +160,7 @@
             </table>
         </div>
         <div id="article_2017">
-            <h1 class="card_title"> 2017 - The Croctor is back </h1>
+            <h1> 2017 - The Croctor is back </h1>
             <table style="width:100%">
                 <td>
                     <img src="css/images/history_photos/2017_article.jpg">
@@ -101,7 +184,7 @@
             </table>
         </div>
         <div id="article_2016">
-            <h1 class="card_title"> 2016 - The Boctor is in </h1>
+            <h1> 2016 - The Boctor is in </h1>
             <table style="width:100%">
                 <td>
                     <img src="css/images/history_photos/2016_article.jpg">
@@ -111,7 +194,7 @@
                     <br>
                     <p>&emsp; Every day after school, our team would get together in the old woodshop and video production room to make magic out of pool noodles and screwdrivers, and over the course of four weeks our team, consisting of about fifteen members -- we were able to create a functioning robot capable of throwing balls, rolling over obstacles and capture defense mechanisms.</p>
                     <br>
-                    <p>&emsp; Our second year was even more as amazing and exciting as our rookie year,  as we doubled our robotics team size which means double the determination. We can only imagine how wonderful and riveting our future as Clairemonsters will be.</p>
+                    <p>&emsp; Our second year was even more as amazing and exciting as our rookie year, as we doubled our robotics team size which means double the determination. We can only imagine how wonderful and riveting our future as Clairemonsters will be.</p>
                 </td>
             </table>
             <hr>
@@ -149,91 +232,13 @@
             </table>
         </div>
     </div>
-    <hr>
-    <!-- Years grid -->
-    <div id="history_grid" class="mdl-grid">
-        <!--To add a new card for the current year, copy the most recent card and paste it directly below this comment.
-             There are four things you must change in this html file. 1: update the comment on the new card to say 20xx.
-             delete (Current Year) on the card from the previous year. 2: underneath the comment you changed, also update the year.
-             3: Between the h2 tags, write the robots name for this year. 4: update the dates in the div which contains the text 20xx-20xx-->
-        <!-- Changes must also be made to the css document, which will be outlined there. -->
-        <!-- Square card (2018) (Current Year)-->
-        <div class="mdl-cell mdl-cell--4-col">
-            <div id="card_2018">
-                <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title mdl-card--expand">
-                        <h2 id="history_current_year_roboName" class="mdl-card__title-text">
-                            Shoryuken
-                        </h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        2017-2018
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <button onclick="history_button(2018)" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Display Full History</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Square card (2017)-->
-        <div class="mdl-cell mdl-cell--4-col">
-            <div id="card_2017">
-                <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title mdl-card--expand">
-                        <h2 class="mdl-card__title-text">
-                            Croctor Crank
-                        </h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        2016-2017
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <button onclick="history_button(2017)" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Display Full History</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Square card (2016)-->
-        <div class="mdl-cell mdl-cell--4-col">
-            <div id="card_2016">
-                <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title mdl-card--expand">
-                        <h2 class="mdl-card__title-text">
-                            Boctor Bank
-                        </h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        2015-2016
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <button onclick="history_button(2016)" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Display Full History</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Square card (2015)-->
-        <div class="mdl-cell mdl-cell--4-col">
-            <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title mdl-card--expand">
-                    <h2 class="mdl-card__title-text">
-                        Sully
-                    </h2>
-                </div>
-                <div class="mdl-card__supporting-text">
-                    2014-2015
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                    <button onclick="history_button(2015)" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Display Full History</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
- <!-- CSS class to put 25px  of padding between contact info and footer-->
-      <div class="spacer"></div>
+<!-- CSS class to put 25px  of padding between contact info and footer-->
+<div class="spacer"></div>
 
-      <!--Footer Begin (Will be pulled from script in <head>)-->
-      <div id="footer-placeholder"></div>
-      <!-- Footer End-->
-  </div>
+<!--Footer Begin (Will be pulled from script in <head>)-->
+<div id="footer-placeholder"></div>
+<!-- Footer End-->
+</div>
+
 </html>

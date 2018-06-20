@@ -153,8 +153,6 @@
 /*History.html (Begin)*/
  #history_articles h1{
      text-align: center;
-     margin-top: 20px;
-     font-size: 60px;
 }
  hr{
      margin-left: 6.3vw;
@@ -162,21 +160,21 @@
 }
  #history_articles p{
      text-align: left;
-     margin-right: 6.3vw;
-     margin-left: 50px;
+     margin-right: 12vw;
+     margin-left: 1vw;
      color: #000000;
-     font-size: 20px;
+     font-size: 14px;
+     line-height: 14px;
 }
  #history_articles iframe{
-     margin-left: 6.3vw;
+     margin-left: 12vw;
      width: 48vw;
      height: 27vw;
 }
  #history_articles img{
      width: 35vw;
      height: auto;
-     margin-left: 6.3vw;
-     margin-right: 20px;
+     margin-left: 12vw;
      display: block;
 }
  #history_grid{
