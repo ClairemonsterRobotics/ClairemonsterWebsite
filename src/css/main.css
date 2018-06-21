@@ -1,5 +1,6 @@
 <style type="text/css">
 
+
 	.headroom {
 	    z-index: 9998;
 	    top: 0;
@@ -39,6 +40,11 @@
 
 
 	/* All use (Begin) */
+	h3{
+		text-align: center;
+		padding-left: 5vw;
+		padding-right:5vw;
+	}
 	.card_title{
 		padding-top:50px;
 		align-self: center;
@@ -49,7 +55,6 @@
 	.card_format{
 		background: lightgray;
 		width:90vw;
-		height:40vh;
 	}
 
 	.card_text{
@@ -74,9 +79,15 @@
 			width: 50vw;
 			height: 20vw;
 	}
+	.full_grid{
+		width: 80vw;
+	}
 	#main_link {
 		color: #FFFFFF;
 		text-decoration: none;
+	}
+	.card_button{
+
 	}
 	/* All use (End) */
 
@@ -94,6 +105,13 @@
 
 
 	.our_team_image{
+		background-image: url('images/our_team.JPG');
+		padding:10px;
+		background-position:center;
+		background-size:cover;
+		position:relative;
+	}
+	.our_team_images{
 		background-image: url('images/our_team.JPG');
 		padding:10px;
 		background-position:center;
@@ -233,6 +251,23 @@
 	#facebook{
 		width:500px;
 	}
-
 	/* blog.html (End) */
+
+	/* support.html (Begin) */
+	#paypal{
+		background: url('images/paypal_button.png') no-repeat;
+		background-size:contain;
+		background-position: center;
+	}
+	#mentors{
+		background: url('images/mentors.JPG') no-repeat;
+		background-size:contain;
+		background-position: center;
+	}
+	#corporations{
+		background: url('images/sponsors.png') no-repeat;
+		background-size:contain;
+		background-position: center;
+	}
+	/* support.html (End) */
 </style>
