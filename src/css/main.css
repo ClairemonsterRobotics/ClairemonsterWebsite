@@ -79,6 +79,10 @@
 			width: 50vw;
 			height: 20vw;
 	}
+	.demo-card-medium{
+			width: 40vw;
+			height: 20vw;
+	}
 	.full_grid{
 		width: 80vw;
 	}
@@ -252,6 +256,9 @@
 		width:500px;
 	}
 	/* blog.html (End) */
+
+
+
 
 	/* support.html (Begin) */
 	#paypal{
