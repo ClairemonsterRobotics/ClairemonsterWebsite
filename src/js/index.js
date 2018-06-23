@@ -1,3 +1,10 @@
+/* All Use (Begin) */
+function scroll(element){
+  //Smoothly scroll to article
+  $('html, body').animate({scrollTop: $(element).offset().top}, 1000);
+}
+/* All Use (End) */
+
 /* blog.html Javascript (Begin) */
   function expandCard(id, size){
 
@@ -33,6 +40,9 @@
 
       var appendChild = $('#'+gridId).children('#'+id+'_cell');
       $("#placeholder").append(appendChild);
+
+      //Smoothly scroll to article
+      scroll(appendChild);
     }
     //When the button is clicked to close the article
     else{
@@ -49,6 +59,9 @@
       //Get article being closed and add it to the "Read Articles" Section
       //.prepend puts it first
       $("#read_articles").prepend(parent.parentNode);
+
+      //Smoothly scroll to article
+      scroll(parent.parentNode);
     }
 
     //Make read_articles title visible if there are read articles
@@ -64,6 +77,5 @@
       // var el = content.querySelector('#'+id+'_text');
       // parent.insertBefore(el.cloneNode(true), buttonParent);
       // button.textContent="Close";
-
 }
 /* blog.html Javascript (End) */
