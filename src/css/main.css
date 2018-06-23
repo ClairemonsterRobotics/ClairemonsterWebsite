@@ -67,6 +67,7 @@
 	}
 
 	.mdl-card__title-text {
+		color: #fff;
 		padding: 5px;
 		background-color: rgba(0,0,0,.7);
 	}
@@ -90,8 +91,11 @@
 		color: #FFFFFF;
 		text-decoration: none;
 	}
-	.card_button{
-
+	.full_card{
+		width: 97.5vw;
+	}
+	.hide{
+		visibility: hidden;
 	}
 	/* All use (End) */
 
@@ -236,13 +240,11 @@
 
 	/* blog.html (Begin) */
 	#social_media_post{
-		color: #fff;
-		background: url('images/example_post.png');
+		background: url('images/blog_photos/example_post.png');
 		background-size: cover;
 	}
 	#blog_post{
-		color: #fff;
-		background: url('images/blogging.png');
+		background: url('images/blog_photos/blogging.png');
 		background-size: cover;
 	}
 	#blog_grid{
@@ -254,6 +256,18 @@
 	}
 	#facebook{
 		width:500px;
+	}
+	#our_philosophy{
+		background: url('images/blog_photos/blogging.png');
+		background-size: cover;
+		background-clip: border-box;
+		height: 100vh;
+	}
+	#ericka{
+		background: url('images/blog_photos/ericka.png');
+		background-size: cover;
+		background-clip: border-box;
+		height: 100vh;
 	}
 	/* blog.html (End) */
 
