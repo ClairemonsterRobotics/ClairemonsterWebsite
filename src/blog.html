@@ -29,6 +29,10 @@
   <meta name="theme-color" content="#ffffff">
   <!--END FAVICONS-->
 
+  <!--HTML File Imports-->
+  <!-- <link rel="import" href="blogs.html"> -->
+
+
   <!-- Script to allow same header over all pages.  Test in Microsoft Edge.  Header file in header.html -->
   <script>
     $.get("header.html", function(data){
@@ -96,29 +100,68 @@
 
   <!--New Blog format:
       1. Duplicate the code of one of the cards
-      2. Change id and create new css class with the background <picture>
+      2. Change ids and create new css class with the background picture
       3. Change title in <h2>
-      4. Create html file in the format of 'blog/<id>' where you replace <id> with the id from step 2
-      5. Change href to the file you created -->
+      4. Change onclick to @id and @class in the second <div> -->
 
-  <div class="mdl-cell mdl-cell--4-col">
-    <div class="demo-card-square mdl-card mdl-shadow--2dp">
-      <!--Put picture in id class in css -->
-      <div id="our_philosophy" class="mdl-card__title mdl-card--expand">
-        <!--Title of blog article-->
+      <div id="placeholder"></div>
+
+
+
+  <div id="written_grid" class="full_grid mdl-grid">
+
+    <div id="our_philosophy_cell" class="1 mdl-cell mdl-cell--4-col">
+      <div class="demo-card-square mdl-card mdl-shadow--2dp">
+        <!--Put picture in id class in css -->
+        <div id="our_philosophy" class="mdl-card__title mdl-card--expand">
+          <!--Title of blog article-->
           <h2 class="mdl-card__title-text">Our Philosophy</h2>
+        </div>
+
+        <!--Change id to firstId_text-->
+        <div id="our_philosophy_text" class="hidden mdl-card__supporting-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Mauris sagittis pellentesque lacus eleifend lacinia...
+        </div>
+
+        <div class="mdl-card__actions mdl-card--border">
+          <!--Change id to firstId_button and change onClick-->
+           <a id="our_philosophy_button" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="expandCard('our_philosophy','demo-card-square')">
+             Read post
+           </a>
+        </div>
       </div>
-      <div class="mdl-card__actions mdl-card--border">
-         <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="blog/our_philosophy">
-           Read post
-         </a>
+    </div>
+
+    <div id="ericka_cell" class="mdl-cell mdl-cell--4-col">
+      <div class="demo-card-square mdl-card mdl-shadow--2dp">
+        <!--Put picture in id class in css -->
+        <div id="ericka" class="mdl-card__title mdl-card--expand">
+          <!--Title of blog article-->
+          <h2 class="mdl-card__title-text">I Joined the team to...</h2>
+        </div>
+
+        <!--Change id to firstId_text-->
+        <div id="ericka_text" class="hidden mdl-card__supporting-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Mauris sagittis pellentesque lacus eleifend lacinia...
+        </div>
+
+        <div class="mdl-card__actions mdl-card--border">
+          <!--Change id to firstId_button and change onClick-->
+           <a id="ericka_button" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="expandCard('ericka','demo-card-square')">
+             Read post
+           </a>
+        </div>
       </div>
     </div>
   </div>
 
-  <!--YET TO BE CREATED-->
 
-<!--Place your code here between the header and footer -->
+  <h2 id="read_articles_title" class="card_title hidden">Read Articles</h2>
+  <div id="read_articles" class="full_grid mdl-grid">
+      <!-- Articles will be dynamically added here as they are read and closed-->
+  </div>
 
 <!-- CSS class to put 25px  of padding between contact info and footer-->
 <div class="spacer"></div>
@@ -127,4 +170,5 @@
 <div id="footer-placeholder"></div>
 <!-- Footer End-->
 </div>
+
 </html>
