@@ -5,6 +5,7 @@ The reason i made this doc is because I am confused as to what this means "http:
 and I would like Charlie or someone else to read it and tell me if they understand what it means.
 
 So pretty much what you are doing is setting the value of 'this' for each specific function.  The test at the end is this:
+      
       var person = {
           firstName : "John",
           lastName : "Smith",
