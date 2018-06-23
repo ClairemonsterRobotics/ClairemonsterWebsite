@@ -2,7 +2,7 @@ function history_button(year) {
     close_others();
     document.getElementById("article_"+year).style.display = "";
     var elmnt = document.getElementById("article-title");
-    elmnt.scrollIntoView(); 
+    scroll(elmnt); 
 }
 
 function close_others(){
