@@ -45,6 +45,15 @@
 		padding-left: 5vw;
 		padding-right:5vw;
 	}
+	p{
+		text-indent: 5em;
+		margin: 10px 0;
+	}
+	.center {
+	    margin: auto;
+	    width: 100%;
+	    padding: 10px;
+	}
 	.card_title{
 		padding-top:50px;
 		align-self: center;
@@ -92,7 +101,7 @@
 		text-decoration: none;
 	}
 	.full_card{
-		width: 97.5vw;
+		width: 80vw;
 	}
 	.hide{
 		visibility: hidden;
@@ -268,6 +277,10 @@
 		background-size: cover;
 		background-clip: border-box;
 		height: 100vh;
+	}
+
+	.mdl-card__supporting-text{
+		margin: auto;
 	}
 	/* blog.html (End) */
 
