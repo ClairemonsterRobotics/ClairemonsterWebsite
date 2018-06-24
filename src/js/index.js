@@ -42,6 +42,10 @@
         //Change button to let the user know they can close it.
         button.textContent="Close";
 
+        //Center article in new div
+        cell.classList.add('center');
+        parent.classList.add('center');
+
         var appendChild = $('#'+gridId).children('#'+id+'_cell');
         $("#placeholder").append(appendChild);
 
@@ -56,6 +60,9 @@
         //Return it to original size
         parent.classList.add(size);
         parent.classList.remove('full_card');
+        parent.classList.remove('center');
+        cell.classList.remove('center');
+
 
         //Change button back
         button.textContent="Read post";
