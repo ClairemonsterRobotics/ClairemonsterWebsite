@@ -85,26 +85,39 @@
 			width: 100%;
 			height: 20vw;
 	}
+
 	.demo-card-wide{
 			width: 50vw;
 			height: 20vw;
 	}
+
 	.demo-card-medium{
 			width: 40vw;
 			height: 20vw;
 	}
+
 	.full_grid{
 		width: 80vw;
 	}
-	#main_link {
-		color: #FFFFFF;
-		text-decoration: none;
-	}
+
 	.full_card{
 		width: 80vw;
 	}
+
 	.hide{
 		visibility: hidden;
+	}
+
+	.circle{
+		width:50%;
+		padding:25% 0;
+		border-radius:50%;
+	}
+
+	.mdl-grid h4,h5{
+		text-align: center;
+		margin: 0;
+		padding: 0.1em
 	}
 	/* All use (End) */
 
@@ -120,7 +133,6 @@
 		font-size: 14.8vw;
 	}
 
-
 	.our_team_image{
 		background-image: url('images/our_team.JPG');
 		padding:10px;
@@ -128,6 +140,7 @@
 		background-size:cover;
 		position:relative;
 	}
+
 	.our_team_images{
 		background-image: url('images/our_team.JPG');
 		padding:10px;
@@ -158,11 +171,57 @@
 		/*Background*/
 		background-image: url('images/team_photo.jpg');
 		background-size: cover;
-    	background-position: center center;
-   		background-repeat: no-repeat;
+    background-position: center center;
+   	background-repeat: no-repeat;
 
-   		/* Parallax image setting*/
-    	background-attachment: fixed;
+   	/* Parallax image setting*/
+    background-attachment: fixed;
+	}
+
+	#officers_grid > div{
+		margin-bottom: 5%;
+	}
+	#officer_captain{
+		background:url('images/main/CharlieJenkins.jpg');
+		background-size: cover;
+		background-position: center center;
+		margin-bottom: 1em;
+	}
+	#officer_co_captain{
+		background-image:url('images/main/KeaganHolmes.jpg');
+		background-size: cover;
+		background-position: center center;
+		margin-bottom: 1em;
+	}
+	#officer_programming{
+		background-image:url('images/main/DerekMcCauley.jpg');
+		background-size: cover;
+		background-position: center center;
+		margin-bottom: 1em;
+	}
+	#officer_marketing{
+		background-image:url('images/main/EvieGill.jpg');
+		background-size: cover;
+		background-position: center center;
+		margin-bottom: 1em;
+	}
+	#officer_build_design{
+		background-image:url('images/main/AlecShu.jpg');
+		background-size: cover;
+		background-position: center center;
+		margin-bottom: 1em;
+	}
+	#officer_secretary{
+		background-image:url('images/main/ErickaSanchez.jpg');
+		background-size: cover;
+		background-position: center center;
+		margin-bottom: 1em;
+	}
+	#officer_treasurer{
+		background-image:url('images/main/GenaTrepte.jpg');
+		background-size: cover;
+		background-position: center center;
+		margin-bottom: 1em;
 	}
 	/* Main.html (End) */
 
@@ -234,6 +293,10 @@
      color: #fff;
      background: url('images/history_photos/2018.jpg');
      background-size: cover;
+}
+#main_link {
+	color: #FFFFFF;
+	text-decoration: none;
 }
 /*History.html (End)*/
 
