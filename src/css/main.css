@@ -260,6 +260,14 @@
 		background-position: center center;
 		margin-bottom: 1em;
 	}
+
+	#contact_image{
+		background-image: url('images/main/contact.jpg');
+		padding:10px;
+		background-position:center;
+		background-size:cover;
+		position:relative;
+	}
 	/* Main.html (End) */
 
 
