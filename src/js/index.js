@@ -77,7 +77,7 @@
 
       //Make read_articles title visible if there are read articles
       if( $('#'+'read_articles').children().length > 0){
-          document.getElementById('read_articles_title').classList.remove('hidden');
+        document.getElementById('read_articles_title').classList.remove('hidden');
       }
       else{
         document.getElementById('read_articles_title').classList.add('hidden');
@@ -89,6 +89,16 @@
         // parent.insertBefore(el.cloneNode(true), buttonParent);
         // button.textContent="Close";
   }
+  //CLick on a button in page based on an html bookmark if button is the id_button
+   function urlClick(){
+     var url = window.location.href;
+     var id = url.substring(url.lastIndexOf('#'));
+     clickEl(id+"_button");
+   }
+   //Automatically click on an element el is a common shortening for element
+   function clickEl(el){
+     $(el).trigger('click')
+   }
 /* All Use (End) */
 
 /* blog.html Javascript (Begin) */

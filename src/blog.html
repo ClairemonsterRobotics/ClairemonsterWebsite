@@ -46,7 +46,6 @@
         $("#footer-placeholder").replaceWith(data);
     });
   </script>
-
 </head>
 
 <div class="mdl-layout">
@@ -180,4 +179,12 @@
 <!-- Footer End-->
 </div>
 
+<!--Function in index.js
+    It will check if there is an id in url, then open the corresponding article
+    Will run after page load-->
+  <script>
+    $(document).ready(function () {
+      urlClick();
+    });
+  </script>
 </html>
