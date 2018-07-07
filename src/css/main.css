@@ -1,408 +1,487 @@
-<style type="text/css">
+<style type="text/css" > .headroom {
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-transition: .25s -o-transition: .25s -moz-transition: .25s -ms-transition: .25s transition: transform .25s ease-in-out;
+}
 
+.headroom--unpinned {
+    top: -108px;
+    -webkit-transition: .25s;
+    -o-transition: .25s;
+    -moz-transition: .25s;
+    -ms-transition: .25s;
+    transition: .25s;
+    -webkit-transform: translateY(-108px);
+    -o-transform: translateY(-108px);
+    -moz-transform: translateY(-108px);
+    -ms-transform: translateY(-108px);
+    transform: translateY(-108px);
+}
 
-	.headroom {
-	    z-index: 9998;
-	    top: 0;
-	    left: 0;
-	    right: 0;
-	    -webkit-transition: .25s
-	    -o-transition: .25s
-	    -moz-transition: .25s
-	    -ms-transition: .25s
-	    transition: transform .25s ease-in-out;
-	}
-
-	.headroom--unpinned {
-	   top: -108px;
-	  -webkit-transition: .25s;
-	  -o-transition: .25s;
-	  -moz-transition: .25s;
-	  -ms-transition: .25s;
-	  transition: .25s;
-	  -webkit-transform: translateY(-108px);
-	  -o-transform: translateY(-108px);
-	  -moz-transform: translateY(-108px);
-	  -ms-transform: translateY(-108px);
-	  transform: translateY(-108px);
-	}
-
-	.headroom--pinned {
-	   top: 0;
-	  -webkit-transition: .5s;
-	  -o-transition: .5s;
-	  -moz-transition: .5s;
-	  -ms-transition: .5s;
-	  transition: .5s;
-	}
+.headroom--pinned {
+    top: 0;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    transition: .5s;
+}
 
 
 
 
-	/* All use (Begin) */
-	h3{
-		text-align: center;
-		padding-left: 5vw;
-		padding-right:5vw;
-	}
-	p{
-		text-indent: 5em;
-		margin: 10px 0;
-	}
-	.center {
-	    margin: auto;
-	    width: 100%;
-	    padding: 10px;
-	}
-	.card_title{
-		padding-top:50px;
-		align-self: center;
-		font-weight: bold;
-		font-color: 'mdl-color-accent';
-	}
+/* All use (Begin) */
 
-	.card_format{
-		background: lightgray;
-		width:90vw;
-	}
+h3 {
+    text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
 
-	.card_text{
-		color: black;
-		font-size: 20px;
-	}
+p {
+    text-indent: 5em;
+    margin: 10px 0;
+}
 
-	.spacer{
-		padding:25px;
-	}
+.center {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
 
-	.mdl-card__title-text {
-		color: #fff;
-		padding: 5px;
-		background-color: rgba(0,0,0,.7);
-	}
+.card_title {
+    padding-top: 50px;
+    align-self: center;
+    font-weight: bold;
+    font-color: 'mdl-color-accent';
+}
 
-	.demo-card-square{
-			width: 100%;
-			height: 20vw;
-	}
+.card_format {
+    background: lightgray;
+    width: 90vw;
+}
 
-	.demo-card-wide{
-			width: 50vw;
-			height: 20vw;
-	}
+.card_text {
+    color: black;
+    font-size: 20px;
+}
 
-	.demo-card-medium{
-			width: 40vw;
-			height: 20vw;
-	}
+.spacer {
+    padding: 25px;
+}
 
-	.full_grid{
-		width: 80vw;
-	}
+.mdl-card__title-text {
+    color: #fff;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, .7);
+}
 
-	.full_card{
-		width: 80vw;
-	}
+.demo-card-square {
+    width: 100%;
+    height: 20vw;
+}
 
-	.hide{
-		visibility: hidden;
-	}
+.demo-card-wide {
+    width: 50vw;
+    height: 20vw;
+}
 
-	.circle{
-		width:50%;
-		padding:25% 0;
-		border-radius:50%;
-	}
+.demo-card-medium {
+    width: 40vw;
+    height: 20vw;
+}
 
-	.mdl-grid h4,h5{
-		text-align: center;
-		margin: 0;
-		padding: 0.1em;
-	}
+.full_grid {
+    width: 80vw;
+}
 
-	.center-image{
-		display: block;
+.full_card {
+    width: 80vw;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.circle {
+    width: 50%;
+    padding: 25% 0;
+    border-radius: 50%;
+}
+
+.mdl-grid h4,
+h5 {
+    text-align: center;
+    margin: 0;
+    padding: 0.1em;
+}
+
+.center-image {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: auto;
-	}
+}
 
-	.blue{
-		background: blue;
-	}
-	.yellow{
-		background: yellow;
-	}
+.blue {
+    background: blue;
+}
 
-	.align-horiz{
-		margin-left: auto;
-		margin-right: auto;
-	}
+.yellow {
+    background: yellow;
+}
 
-	.align-vert{
-		display:flex;
-		justify-content:center;
-		align-items:flex-end;
-	}
+.align-horiz {
+    margin-left: auto;
+    margin-right: auto;
+}
 
-	.github-icon{
-		background-image: url("images/github.ico");
-		width:32px;
-		height:32px;
-	}
+.align-vert {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 
-	.icon{
-		width: auto;
-		height: auto;
-		display:inline-block;
-	}
-	/* All use (End) */
+.github-icon {
+    background-image: url("images/github.ico");
+    width: 32px;
+    height: 32px;
+}
 
+.icon {
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
 
+/* All use (End) */
 
+/* Main.html (Begin) */
 
-	/* Main.html (Begin) */
-	.hero h1{
-		/* Align and style text */
-		text-align: center;
-		color: white;
-		font-weight: bold;
-		font-size: 14.8vw;
-	}
+.hero h1 {
+    /* Align and style text */
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14.8vw;
+}
 
-	/* Big introductory image */
-	.hero{
-		/* Max width */
-		width:100vw;
-		/* Max height */
-		height:100vh;
+/* Big introductory image */
 
-		/* Center horizontally and vertically */
-		display: flex;
-		justify-content: center;
-		align-items: center;
+.hero {
+    /* Max width */
+    width: 100vw;
+    /* Max height */
+    height: 100vh;
 
-		/*Background*/
-		background-image: url('images/team_photo.jpg');
-		background-size: cover;
+    /* Center horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*Background*/
+    background-image: url('images/team_photo.jpg');
+    background-size: cover;
     background-position: center center;
-   	background-repeat: no-repeat;
+    background-repeat: no-repeat;
 
-   	/* Parallax image setting*/
+    /* Parallax image setting*/
     background-attachment: fixed;
-	}
+}
 
-	/* Puts a space underneath all <div> tags inside of the grid taged officers_grid */
-	#officers_grid > div{
-		margin-bottom: 0%;
-	}
+/* Puts a space underneath all <div> tags inside of the grid taged officers_grid */
 
-	/*Next classes are for the images of our leadership team
+#officers_grid > div {
+    margin-bottom: 0%;
+}
+
+/*Next classes are for the images of our leadership team
 		To update, change image url
 		Will adjust to size of screen
 		1em margin will put a 1 font-size gap between picture and text */
-	#officer_captain{
-		background:url('images/main/CharlieJenkins.jpg');
-		background-size: cover;
-		background-position: center center;
-		margin-bottom: 1em;
-	}
-	#officer_co_captain{
-		background-image:url('images/main/KeaganHolmes.jpg');
-		background-size: cover;
-		background-position: center center;
-		margin-bottom: 1em;
-	}
-	#officer_programming{
-		background-image:url('images/main/DerekMcCauley.jpg');
-		background-size: cover;
-		background-position: center center;
-		margin-bottom: 1em;
-	}
-	#officer_marketing{
-		background-image:url('images/main/EvieGill.jpg');
-		background-size: cover;
-		background-position: center center;
-		margin-bottom: 1em;
-	}
-	#officer_build_design{
-		background-image:url('images/main/AlecShu.jpg');
-		background-size: cover;
-		background-position: center center;
-		margin-bottom: 1em;
-	}
-	#officer_secretary{
-		background-image:url('images/main/ErickaSanchez.jpg');
-		background-size: cover;
-		background-position: center center;
-		margin-bottom: 1em;
-	}
-	#officer_treasurer{
-		background-image:url('images/main/GenaTrepte.jpg');
-		background-size: cover;
-		background-position: center center;
-		margin-bottom: 1em;
-	}
 
-	/* Formatting of next id classes are for grid images and will resize to the screen
+#officer_captain {
+    background: url('images/main/CharlieJenkins.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_co_captain {
+    background-image: url('images/main/KeaganHolmes.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_programming {
+    background-image: url('images/main/DerekMcCauley.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_marketing {
+    background-image: url('images/main/EvieGill.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_build_design {
+    background-image: url('images/main/AlecShu.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_secretary {
+    background-image: url('images/main/ErickaSanchez.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_treasurer {
+    background-image: url('images/main/GenaTrepte.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+/* Formatting of next id classes are for grid images and will resize to the screen
 		 Contain property will cause it to expand and contract */
-	#contact_image{
-		background: url('images/main/contact.jpg') no-repeat;
-		background-size:contain;
-		background-position: center;
-	}
-	#current_image{
-		background: url('images/current.JPG') no-repeat;
-		background-size:contain;
-		background-position: center;
-	}
-	#our_team_image{
-		background: url('images/our_team.JPG') no-repeat;
-		background-size:contain;
-		background-position: center;
-	}
-	/* Main.html (End) */
 
+#contact_image {
+    background: url('images/main/contact.jpg') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 
+#current_image {
+    background: url('images/current.JPG') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 
+#our_team_image {
+    background: url('images/our_team.JPG') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
 
-	/* Contact.html (End) */
-	.contact{
-		margin: 0 auto;
-		width:90vw;
-		height:40vh;
-	}
+/* Main.html (End) */
 
-	.contact_text{
-		color: #FF00CC;
-	}
-	/* Contact.html (End) */
+/* Contact.html (End) */
 
+.contact {
+    margin: 0 auto;
+    width: 90vw;
+    height: 40vh;
+}
 
+.contact_text {
+    color: #FF00CC;
+}
 
-
+/* Contact.html (End) */
 
 /*History.html (Begin)*/
- #history_articles h1{
-     text-align: center;
+
+#history_articles h1 {
+    text-align: center;
 }
- hr{
-     margin-left: 6.3vw;
-     margin-right: 6.3vw;
+
+hr {
+    margin-left: 6.3vw;
+    margin-right: 6.3vw;
 }
- #history_articles p{
-     text-align: left;
-     margin-right: 12vw;
-     margin-left: 1vw;
-     color: #000000;
-     font-size: 18px;
-     line-height: 22px;
+
+#history_articles p {
+    text-align: left;
+    margin-right: 12vw;
+    margin-left: 1vw;
+    color: #000000;
+    font-size: 18px;
+    line-height: 22px;
 }
- #history_articles iframe{
-     margin-left: 12vw;
-     width: 48vw;
-     height: 27vw;
+
+#history_articles iframe {
+    margin-left: 12vw;
+    width: 48vw;
+    height: 27vw;
 }
- #history_articles img{
-     width: 35vw;
-     height: auto;
-     margin-left: 12vw;
-     display: block;
+
+#history_articles img {
+    width: 35vw;
+    height: auto;
+    margin-left: 12vw;
+    display: block;
 }
- #history_grid{
-     width: 90%;
+
+#history_grid {
+    width: 90%;
 }
- #card_2015 .demo-card-square > .mdl-card__title{
-     color: #fff;
-     background: url('images/history_photos/2015.jpg');
-     background-size: cover;
+
+#card_2015 .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/history_photos/2015.jpg');
+    background-size: cover;
 }
- #card_2016 .demo-card-square > .mdl-card__title{
-     color: #fff;
-     background: url('images/history_photos/2016.jpg');
-     background-size: cover;
+
+#card_2016 .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/history_photos/2016.jpg');
+    background-size: cover;
 }
- #card_2017 .demo-card-square > .mdl-card__title{
-     color: #fff;
-     background: url('images/history_photos/2017.jpg');
-     background-size: cover;
+
+#card_2017 .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/history_photos/2017.jpg');
+    background-size: cover;
 }
- #card_2018 .demo-card-square > .mdl-card__title{
-     color: #fff;
-     background: url('images/history_photos/2018.jpg');
-     background-size: cover;
+
+#card_2018 .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/history_photos/2018.jpg');
+    background-size: cover;
 }
+
 #main_link {
-	color: #FFFFFF;
-	text-decoration: none;
+    color: #FFFFFF;
+    text-decoration: none;
 }
+
 /*History.html (End)*/
 
+/* sign_up.html (Begin)*/
 
+/* sign_up.html (End) */
 
+/* blog.html (Begin) */
 
-	/* sign_up.html (Begin)*/
+#social_media_post {
+    background: url('images/blog_photos/example_post.png');
+    background-size: cover;
+}
 
-	/* sign_up.html (End) */
+#blog_post {
+    background: url('images/blog_photos/blogging.png');
+    background-size: cover;
+}
 
+#blog_grid {
+    width: 80vw;
+}
 
+#social_media_grid {
+    position: relative;
+    width: 80vw;
+}
 
+#facebook {
+    width: 500px;
+}
 
-	/* blog.html (Begin) */
-	#social_media_post{
-		background: url('images/blog_photos/example_post.png');
-		background-size: cover;
-	}
-	#blog_post{
-		background: url('images/blog_photos/blogging.png');
-		background-size: cover;
-	}
-	#blog_grid{
-		width:80vw;
-	}
-	#social_media_grid{
-		position: relative;
-		width:80vw;
-	}
-	#facebook{
-		width:500px;
-	}
-	#our_philosophy{
-		background: url('images/blog_photos/blogging.png');
-		background-size: cover;
-		background-clip: border-box;
-		height: 100vh;
-	}
-	#ericka{
-		background: url('images/blog_photos/ericka.png');
-		background-size: cover;
-		background-clip: border-box;
-		height: 100vh;
-	}
+#our_philosophy {
+    background: url('images/blog_photos/blogging.png');
+    background-size: cover;
+    background-clip: border-box;
+    height: 100vh;
+}
 
-	.mdl-card__supporting-text{
-		margin: auto;
-	}
-	/* blog.html (End) */
+#ericka {
+    background: url('images/blog_photos/ericka.png');
+    background-size: cover;
+    background-clip: border-box;
+    height: 100vh;
+}
 
+.mdl-card__supporting-text {
+    margin: auto;
+}
 
+/* blog.html (End) */
 
+/* support.html (Begin) */
 
-	/* support.html (Begin) */
-	#paypal{
-		background: url('images/paypal_button.png') no-repeat;
-		background-size:contain;
-		background-position: center;
-	}
-	#mentors{
-		background: url('images/mentors.JPG') no-repeat;
-		background-size:contain;
-		background-position: center;
-	}
-	#corporations{
-		background: url('images/sponsors.png') no-repeat;
-		background-size:contain;
-		background-position: center;
-	}
-	/* support.html (End) */
-</style>
+#paypal {
+    background: url('images/paypal_button.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#mentors {
+    background: url('images/mentors.JPG') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#corporations {
+    background: url('images/sponsors.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* support.html (End) */
+
+/* sponsors.html (Begin) */
+
+#spontable .demo-card-square.mdl-card {
+    width: 320px;
+    height: 320px;
+}
+
+#sponsor_arc .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/Sponsor_logos/arc.png') bottom right 15% no-repeat;
+    background-size: 90%;
+    background-position: center;
+    background-color: #fff
+}
+
+#sponsor_nasa .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/Sponsor_logos/nasa.png') bottom right 15% no-repeat;
+    background-size: 90%;
+    background-position: center;
+    background-color: #fff
+}
+
+#sponsor_first .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/Sponsor_logos/first1.png') bottom right 15% no-repeat;
+    background-size: 90%;
+    background-position: center;
+    background-color: #fff
+}
+
+#sponsor_mitchell .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/Sponsor_logos/mitchell.png') bottom right 15% no-repeat;
+    background-size: 90%;
+    background-position: center;
+    background-color: #fff
+}
+
+#sponsor_rotary .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/Sponsor_logos/rotary_foundation.png') bottom right 15% no-repeat;
+    background-size: 90%;
+    background-position: center;
+    background-color: #fff
+}
+
+#sponsor_qualcomm .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/Sponsor_logos/qualcomm.png') bottom right 15% no-repeat;
+    background-size: 90%;
+    background-position: center;
+    background-color: #fff
+}
+
+/* sponsors.html (End) */
+
+</style >
