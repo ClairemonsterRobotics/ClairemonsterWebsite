@@ -15,7 +15,7 @@
    <!--Title in tab-->
    <head>
      <meta charset="UTF-8">
-     <title>Clairemont Robotics</title>
+     <title>Clairemonster Robotics</title>
      <!--All of the images to correctly display logo in tab for all browsers
          All favicons created with: https://realfavicongenerator.net -->
      <link rel="apple-touch-icon" sizes="180x180" href="css/images/favicons/apple-touch-icon.png">
@@ -61,9 +61,11 @@
        A title, and two boxes layed out horizontally to each other-->
    <h2 class="card_title">OUR TEAM</h2>
    <!--Grid which holds an image on one side and text on the other-->
-   <div class="mdl-grid mdl-shadow--4dp card_format full_grid">
-      <!--IMAGE (Hide on mobile)-->
-      <div class="mdl-cell mdl-cell--6-col our_team_image mdl-cell--hide-phone"></div>
+   <div class="mdl-grid mdl-shadow--4dp card_format">
+      <!--IMAGE
+          our_team_image id sets correct image
+          Will hide on smaller screens-->
+      <div id="our_team_image" class="mdl-cell mdl-cell--6-col"></div>
       <!--TEXT-->
       <div class="mdl-cell mdl-cell--6-col card_text">
          We are FIRST Robotics team Clairemonster 5474.  We are dedicated to robotics in all forms.  We focus on designing, building, programming, and marketing our robots in order to propogate robotics.  It is our philosophy that everybody can do anything they want on our team, so we teach them what they want to learn.
@@ -81,7 +83,7 @@
        A title, and two boxes layed out horizontally to each other-->
    <h2 class="card_title">OUR CURRENT YEAR</h2>
    <!--Grid which holds an image on one side and text on the other-->
-   <div class="mdl-grid mdl-shadow--4dp card_format full_grid">
+   <div class="mdl-grid mdl-shadow--4dp card_format">
       <!--TEXT-->
       <div class="mdl-cell mdl-cell--6-col card_text">
          It is our fifth year as a FIRST team.  This year is our first without the students who founded our team. Last year we were semi-finalists for the first time in team history, and hope to continue our success.
@@ -91,32 +93,35 @@
            Click for more info
          </a>
       </div>
-      <!--IMAGE (Hide of mobile)-->
-      <div class="mdl-cell mdl-cell--6-col current_image mdl-cell--hide-phone"></div>
+      <!--IMAGE
+        current_image id sets correct image
+        Will hide on smaller screens-->
+      <div id="current_image" class="mdl-cell mdl-cell--6-col"></div>
    </div>
    <!--END SEGMENT-->
 
-   <!-- CSS class to put 25px  of padding between contact info and footer-->
-   <div class="spacer"></div>
-
-   <!--This section outlines the "Our Team" segment -->
+   <!--This section outlines the "Contact US" segment -->
    <!--A "card" is defined by a section with a background and a shadow. There are three parts.
        A title, and two boxes layed out horizontally to each other-->
-   <h2 class="card_title">CONTACT US</h2>
-   <!--Grid which holds an image on one side and text on the other-->
-   <div class="mdl-grid mdl-shadow--4dp card_format full_grid">
-      <!--IMAGE (Hide on mobile)-->
-      <div id="contact_image" class="mdl-cell mdl-cell--6-col mdl-cell--hide-phone"></div>
-      <!--TEXT-->
-      <div class="mdl-cell mdl-cell--6-col card_text">
-         We want to help others.  If you are a rookie team, or an experienced team looking for some help, contact us.  All of the website source code is on <a href="https://github.com/ClairemonsterRobotics/ClairemonsterWebsite" target="_blank">our github</a> and we are always available if you want to learn something!
-         <br>
-         <!-- Accent-colored raised button with ripple -->
-         <a href="contact.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-         Click for more info
-       </a>
-      </div>
-   </div>
+       <h2 class="card_title">CONTACT US</h2>
+       <!--Grid which holds an image on one side and text on the other-->
+       <div class="mdl-grid mdl-shadow--4dp card_format">
+          <!--IMAGE
+              contact_image id sets correct image
+              Will hide on smaller screens-->
+          <div id="contact_image" class="mdl-cell mdl-cell--6-col"></div>
+          <!--TEXT-->
+          <div class="mdl-cell mdl-cell--6-col card_text">
+            We want to help others.  If you are a rookie team, or an experienced team looking for some help, contact us.  All of the website source code is on <a href="https://github.com/ClairemonsterRobotics/ClairemonsterWebsite" target="_blank">our github</a> and we are always available if you want to learn something!
+             <br>
+             <!-- Accent-colored raised button with ripple
+                  Link to Contact page
+                  target="_blank" opens link in new page-->
+             <a href="contact.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" target="_blank">
+               Contact Us!
+             </a>
+          </div>
+       </div>
    <!--END SEGMENT-->
 
    <!-- CSS class to put 25px  of padding between contact info and footer-->
@@ -267,6 +272,7 @@
                 </div>
               </div>
             </div>
+
    </div>
 
 

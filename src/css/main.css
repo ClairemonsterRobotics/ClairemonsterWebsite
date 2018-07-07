@@ -170,30 +170,7 @@
 		font-size: 14.8vw;
 	}
 
-	.our_team_image{
-		background-image: url('images/our_team.JPG');
-		padding:10px;
-		background-position:center;
-		background-size:cover;
-		position:relative;
-	}
-
-	.our_team_images{
-		background-image: url('images/our_team.JPG');
-		padding:10px;
-		background-position:center;
-		background-size:cover;
-		position:relative;
-	}
-
-	.current_image{
-		background-image: url('images/current.JPG');
-		padding:10px;
-		background-position:center;
-		background-size:cover;
-		position:relative;
-	}
-
+	/* Big introductory image */
 	.hero{
 		/* Max width */
 		width:100vw;
@@ -215,9 +192,15 @@
     background-attachment: fixed;
 	}
 
+	/* Puts a space underneath all <div> tags inside of the grid taged officers_grid */
 	#officers_grid > div{
-		margin-bottom: 5%;
+		margin-bottom: 0%;
 	}
+
+	/*Next classes are for the images of our leadership team
+		To update, change image url
+		Will adjust to size of screen
+		1em margin will put a 1 font-size gap between picture and text */
 	#officer_captain{
 		background:url('images/main/CharlieJenkins.jpg');
 		background-size: cover;
@@ -261,12 +244,22 @@
 		margin-bottom: 1em;
 	}
 
+	/* Formatting of next id classes are for grid images and will resize to the screen
+		 Contain property will cause it to expand and contract */
 	#contact_image{
-		background-image: url('images/main/contact.jpg');
-		padding:10px;
-		background-position:center;
-		background-size:cover;
-		position:relative;
+		background: url('images/main/contact.jpg') no-repeat;
+		background-size:contain;
+		background-position: center;
+	}
+	#current_image{
+		background: url('images/current.JPG') no-repeat;
+		background-size:contain;
+		background-position: center;
+	}
+	#our_team_image{
+		background: url('images/our_team.JPG') no-repeat;
+		background-size:contain;
+		background-position: center;
 	}
 	/* Main.html (End) */
 
