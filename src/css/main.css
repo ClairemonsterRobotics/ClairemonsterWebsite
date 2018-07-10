@@ -133,7 +133,7 @@ h5 {
     background: yellow;
 }
 
-.align-horiz {
+.center-horiz {
     margin-left: auto;
     margin-right: auto;
 }
@@ -471,7 +471,7 @@ hr {
     background: url('images/Sponsor_logos/rotary_foundation.png') bottom right 15% no-repeat;
     background-size: 90%;
     background-position: center;
-    background-color: #fff
+    background-color: #000000
 }
 
 #sponsor_qualcomm .demo-card-square > .mdl-card__title {
