@@ -7,7 +7,7 @@
 
    //Automatically click on an element el is a common shortening for element
    function clickEl(el){
-     $(el).trigger('click')
+     $(el).trigger('click');
    }
 /* All Use (End) */
 
@@ -79,7 +79,7 @@
       $("#read_articles").prepend(parent.parentNode);
 
       //Smoothly scroll to article
-      scroll(textLayout);
+      scroll(button);
     }
 
     //Make read_articles title visible if there are read articles
@@ -104,3 +104,68 @@
      clickEl(id+"_button");
    }
 /* blog.html Javascript (End) */
+
+
+
+/* blog_creator.html Javascript (Begin) */
+
+  function submitBlogForm(){
+
+    //title of article
+    const title = document.getElementById('blog_creator_title').value;
+    //id of article
+    //Change all spaces from title into underscores
+    const id = replaceAll(title.toLowerCase()," ","_");
+    //content of article
+    const content = document.getElementById('blog_creator_content').value;
+
+    //area where html will be displayed
+    const htmlArea = document.getElementById('blog_creator_html');
+    //area where css will be displayed
+    const cssArea = document.getElementById('blog_creator_css');
+
+    //Remove spacing from first paragraph to correctly format the next step
+    var htmlContent = content.replace("     ", "");
+    //Add correct html tags between paragraphs
+    htmlContent = replaceAll(content, "     ", "</p><p>"+ "\n");
+
+
+    //Genrate and display HTML code
+    htmlArea.textContent =    "<div id=" + "\"" + id + "_cell\" " + "class=\"mdl-cell mdl-cell--4-col\">" + "\n" +
+                              "    <div class=\"demo-card-square mdl-card mdl-shadow--2dp\">" + "\n" +
+                              "     <!--Put picture in id class in css -->" + "\n" +
+                              "     <div id=" + "\"" + id + "\" " + "class=\"mdl-card__title mdl-card--expand\">" + "\n" +
+                              "       <!--Title of blog article-->"  + "\n" +
+                              "       <h2 class=\"mdl-card__title-text\">" + title + "</h2>" + "\n" +
+                              "     </div>" + "\n" +
+                              "     <!--Change id to firstId_text-->"  + "\n" +
+                              "     <div id=" + "\"" + id + "_text\" " + "class=\"hidden mdl-card__supporting-text\">"  + "\n" +
+                              "       <p>"  + "\n" +
+                              "      " + htmlContent + "\n" +
+                              "     </p>"  + "\n" +
+                              "   </div>" + "\n" +
+                              "   <div class=\"mdl-card__actions mdl-card--border\">"  + "\n" +
+                              "     <!--Change id to firstId_button and change onClick-->"  + "\n" +
+                              "      <a id=" + "\"" + id + "_button\" " + "class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect\" " + "onclick=\"expandCard(" + "\'" + id + "\'," + "\'demo-card-square\')\">"  + "\n" +
+                              "        Read post"  + "\n" +
+                              "      </a>"  + "\n" +
+                              "   </div>"  + "\n" +
+                              " </div>"  + "\n" +
+                              "</div>"  + "\n";
+    //Genrate and display CSS code
+    cssArea.textContent =     "#"+ id + "{" + "\n" +
+                              "    background: url(\'images/blog_photos/" + id + ".png\') no-repeat;" + "\n" +
+                              "    /* Change background-size: cover; to background-size: contain; if full picture is need, or cut-off */" + "\n" +
+                              "    background-size: cover;" + "\n" +
+                              "    background-clip: border-box;" + "\n" +
+                              "    background-position: center;" + "\n" +
+                              "    height: 100vh;" + "\n" +
+                              "}";
+
+
+  }
+
+function replaceAll(text, search, replacement) {
+    var target = text;
+    return target.replace(new RegExp(search, 'g'), replacement);
+};
