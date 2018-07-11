@@ -356,11 +356,20 @@ hr {
 
 /*History.html (End)*/
 
+
+
+
 /* sign_up.html (Begin)*/
 
 /* sign_up.html (End) */
 
+
+
+
 /* blog.html (Begin) */
+.mdl-card__supporting-text {
+    margin: auto;
+}
 
 #social_media_post {
     background: url('images/blog_photos/example_post.png');
@@ -386,22 +395,44 @@ hr {
 }
 
 #our_philosophy {
-    background: url('images/blog_photos/blogging.png');
+    background: url('images/blog_photos/blogging.png') no-repeat;
+    /* Expand image so there is no white space */
     background-size: cover;
     background-clip: border-box;
+    background-position: center;
     height: 100vh;
 }
 
 #ericka {
-    background: url('images/blog_photos/ericka.png');
+    background: url('images/blog_photos/ericka.png') no-repeat;
+    /* Expand image so there is no white space */
     background-size: cover;
     background-clip: border-box;
+    background-position: center;
     height: 100vh;
 }
 
-.mdl-card__supporting-text {
-    margin: auto;
+#open_source {
+    background: url('images/blog_photos/open_source.png') no-repeat;
+    /* Shrink the image so whole thing fits */
+    background-size: contain;
+    background-clip: border-box;
+    background-position: center;
+    height: 100vh;
 }
+
+#starting_a_team{
+    background: url('images/blog_photos/starting_a_team.png') no-repeat;
+    /* Change background-size: cover; to background-size: contain; if full picture is need, or cut-off */
+    background-size: contain;
+    background-clip: border-box;
+    background-position: center;
+    height: 100vh;
+}
+
+
+/* Put new blog css elements here! */
+
 
 /* blog.html (End) */
 
@@ -483,5 +514,22 @@ hr {
 }
 
 /* sponsors.html (End) */
+
+/* blog_creater.html (Begin) */
+  code {
+      background: hsl(220, 80%, 90%);
+  }
+
+  pre {
+      white-space: pre-wrap;
+      background: hsl(30,80%,90%);
+  }
+  .text_no_margin {
+    text-align: center;
+    margin: 0;
+    padding: 0.1em;
+  }
+/* blog_creater.html (Begin) */
+
 
 </style >
