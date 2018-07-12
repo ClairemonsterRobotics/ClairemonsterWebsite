@@ -430,6 +430,14 @@ hr {
     height: 100vh;
 }
 
+#purpose_of_marketing{
+    background: url('images/blog_photos/purpose_of_marketing.jpg') no-repeat;
+    /* Change background-size: cover; to background-size: contain; if full picture is need, or cut-off */
+    background-size: cover;
+    background-clip: border-box;
+    background-position: center;
+    height: 100vh;
+}
 
 /* Put new blog css elements here! */
 
