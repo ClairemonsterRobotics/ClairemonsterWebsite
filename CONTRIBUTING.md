@@ -49,3 +49,7 @@ Folder-less files in "src" are html file pages for the Website
 The goal of this repository is not only to update our website, but also to aid other FRC teams to create websites.  When you make changes, please comment on what it means so that people who are learning can understand.  No amount of commenting and description is too much.
 
 Place all of the CSS from your page together in the main.css and comment around it to express which page it is designed for.  It should be formatted like, "<page_name>.html (Begin)" and then the same thing for the end.  Please look at the main.css document for more examples.
+
+## Creating new blogs
+
+To create new blogs, open up the blog_creator.html file.  Then put in the title of the article, copy and paste the text of the article into "content" (make sure that there is 5 spaces in front of each paragraph), and put the name of the image file.  Additionally, place the image in src/css/images/blog_photos.  After you click submit, the html and CSS code will be generated in the expandable boxes below.  Copy and paste the html into blog.html above where it says, "Put all new blogs here!" Then copy and paste the CSS into main.css above where it says, "Put new blog css elements here!"
