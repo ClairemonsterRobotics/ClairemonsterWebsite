@@ -463,10 +463,30 @@ hr {
 /* support.html (End) */
 
 /* sponsors.html (Begin) */
+#spontable {
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+}
 
 #spontable .demo-card-square.mdl-card {
     width: 320px;
     height: 320px;
+}
+#spontable td:nth-child(0){
+    width:30%;
+}
+
+#spontable td:nth-child(2){
+    width:30%;
+}
+
+#spontable td:nth-child(1){
+    width:20%;
+}
+
+#spontable td:nth-child(3){
+    width:20%;
 }
 
 #sponsor_arc .demo-card-square > .mdl-card__title {
