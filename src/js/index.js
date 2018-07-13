@@ -126,26 +126,28 @@
 
     //Remove spacing from first paragraph to correctly format the next step
     var htmlContent = content.replace("     ", "");
-    //Add correct html tags between paragraphs
-    htmlContent = replaceAll(content, "     ", "</p><p>"+ "\n");
+    //Add correct html tags between paragraphs.  Will put a space before and after the <p> tags.  "\n" is the same as an "enter" or "return"
+    htmlContent = replaceAll(htmlContent, "     ", "\n" + "</p><p>"+ "\n");
 
 
     //Genrate and display HTML code
-    htmlArea.textContent =    "<div id=" + "\"" + id + "_cell\" " + "class=\"mdl-cell mdl-cell--4-col\">" + "\n" +
+    htmlArea.textContent =    "<!-- Generated from clairemonsterrobotics.com/blog_creator.html -->" + "\n" +
+                              "<!-- " + "\"" + title + "\"" + " blog post-->" + "\n" +
+                              "<div id=" + "\"" + id + "_cell\" " + "class=\"mdl-cell mdl-cell--4-col\">" + "\n" +
                               "    <div class=\"demo-card-square mdl-card mdl-shadow--2dp\">" + "\n" +
-                              "     <!--Put picture in id class in css -->" + "\n" +
+                              "     <!-- This id will style the background in CSS -->" + "\n" +
                               "     <div id=" + "\"" + id + "\" " + "class=\"mdl-card__title mdl-card--expand\">" + "\n" +
                               "       <!--Title of blog article-->"  + "\n" +
                               "       <h2 class=\"mdl-card__title-text\">" + title + "</h2>" + "\n" +
                               "     </div>" + "\n" +
-                              "     <!--Change id to firstId_text-->"  + "\n" +
+                              "     <!-- After the button is clicked, the text here will be unhidden through Javascript by removing the \"hidden\" class-->"  + "\n" +
                               "     <div id=" + "\"" + id + "_text\" " + "class=\"hidden mdl-card__supporting-text\">"  + "\n" +
                               "       <p>"  + "\n" +
-                              "      " + htmlContent + "\n" +
+                              htmlContent + "\n" +
                               "     </p>"  + "\n" +
                               "   </div>" + "\n" +
                               "   <div class=\"mdl-card__actions mdl-card--border\">"  + "\n" +
-                              "     <!--Change id to firstId_button and change onClick-->"  + "\n" +
+                              "     <!--This button activates the expandCard(id_of_text_to_be_displayed, size_of_card) Javascript function-->"  + "\n" +
                               "      <a id=" + "\"" + id + "_button\" " + "class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect\" " + "onclick=\"expandCard(" + "\'" + id + "\'," + "\'demo-card-square\')\">"  + "\n" +
                               "        Read post"  + "\n" +
                               "      </a>"  + "\n" +
@@ -153,11 +155,11 @@
                               " </div>"  + "\n" +
                               "</div>"  + "\n";
     //Genrate and display CSS code
-    cssArea.textContent =     "#"+ id + "{" + "\n" +
+    cssArea.textContent =     "/* Generated from clairemonsterrobotics.com/blog_creator.html */" + "\n" +
+                              "#"+ id + "{" + "\n" +
                               "    background: url(\'images/blog_photos/" + id + ".png\') no-repeat;" + "\n" +
-                              "    /* Change background-size: cover; to background-size: contain; if full picture is need, or cut-off */" + "\n" +
+                              "    /* Change \"background-size: cover;\" to \"background-size: contain;\" if full picture is needed */" + "\n" +
                               "    background-size: cover;" + "\n" +
-                              "    background-clip: border-box;" + "\n" +
                               "    background-position: center;" + "\n" +
                               "    height: 100vh;" + "\n" +
                               "}";
