@@ -56,23 +56,29 @@
       <h6 class="card_title text_no_margin">Copy and paste the generated html in the first box above where it says "Put all new blogs here!" in blog.html (Use ctrl+f to find the comment)</h6>
       <h6 class="card_title text_no_margin">Copy and paste the generated CSS above where it says "Put new blog css elements here!" in main.css (Use ctrl+f to find the comment)</h6>
 
+      <!-- Put spacing around everything -->
       <div style="padding:5em">
+        <!-- Questions to generate correct files for a blog-->
         <form id="blog_creator_form">
+          <!-- What is the title of the blog? -->
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input class="mdl-textfield__input" type="text" id="blog_creator_title">
             <label class="mdl-textfield__label" for="blog_creator_title">Title of Article</label>
           </div>
           <br>
+          <!-- What is the content of the blog? -->
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input class="mdl-textfield__input" type="text" id="blog_creator_content">
             <label class="mdl-textfield__label" for="blog_creator_content">Content of Article</label>
           </div>
           <br>
+          <!-- What is the headlining image? -->
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input class="mdl-textfield__input" type="text" id="blog_creator_image">
             <label class="mdl-textfield__label" for="blog_creator_image">Image File Name</label>
           </div>
           <br>
+          <!-- After the user inputs answers to the questions, this button will call "submitBlogForm()" and the html/css will be generated -->
           <div class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="submitBlogForm()">Submit</div>
         </form>
 
