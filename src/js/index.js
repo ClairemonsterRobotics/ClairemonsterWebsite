@@ -168,6 +168,9 @@
 
   }
 
+//@param text = text to be searched
+//@param search = string to be looked for in text
+//@param replacement = string to replace search
 function replaceAll(text, search, replacement) {
     var target = text;
     return target.replace(new RegExp(search, 'g'), replacement);
