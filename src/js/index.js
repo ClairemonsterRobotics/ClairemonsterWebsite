@@ -118,7 +118,8 @@
     const id = replaceAll(title.toLowerCase()," ","_");
     //content of article
     const content = document.getElementById('blog_creator_content').value;
-
+    //get name of image file
+    const image = document.getElementById('blog_creator_image').value;
     //area where html will be displayed
     const htmlArea = document.getElementById('blog_creator_html');
     //area where css will be displayed
@@ -130,7 +131,7 @@
     htmlContent = replaceAll(htmlContent, "     ", "\n" + "</p><p>"+ "\n");
 
 
-    //Genrate and display HTML code
+    //Generate and display HTML code
     htmlArea.textContent =    "<!-- Generated from clairemonsterrobotics.com/blog_creator.html -->" + "\n" +
                               "<!-- " + "\"" + title + "\"" + " blog post-->" + "\n" +
                               "<div id=" + "\"" + id + "_cell\" " + "class=\"mdl-cell mdl-cell--4-col\">" + "\n" +
@@ -154,10 +155,10 @@
                               "   </div>"  + "\n" +
                               " </div>"  + "\n" +
                               "</div>"  + "\n";
-    //Genrate and display CSS code
+    //Generate and display CSS code
     cssArea.textContent =     "/* Generated from clairemonsterrobotics.com/blog_creator.html */" + "\n" +
                               "#"+ id + "{" + "\n" +
-                              "    background: url(\'images/blog_photos/" + id + ".png\') no-repeat;" + "\n" +
+                              "    background: url(\'images/blog_photos/" + image + ") no-repeat;" + "\n" +
                               "    /* Change \"background-size: cover;\" to \"background-size: contain;\" if full picture is needed */" + "\n" +
                               "    background-size: cover;" + "\n" +
                               "    background-position: center;" + "\n" +
