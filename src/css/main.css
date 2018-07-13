@@ -398,7 +398,6 @@ hr {
     background: url('images/blog_photos/blogging.png') no-repeat;
     /* Expand image so there is no white space */
     background-size: cover;
-    background-clip: border-box;
     background-position: center;
     height: 100vh;
 }
@@ -407,7 +406,6 @@ hr {
     background: url('images/blog_photos/ericka.png') no-repeat;
     /* Expand image so there is no white space */
     background-size: cover;
-    background-clip: border-box;
     background-position: center;
     height: 100vh;
 }
@@ -416,25 +414,23 @@ hr {
     background: url('images/blog_photos/open_source.png') no-repeat;
     /* Shrink the image so whole thing fits */
     background-size: contain;
-    background-clip: border-box;
     background-position: center;
     height: 100vh;
 }
 
+/* Generated from clairemonsterrobotics.com/blog_creator.html */
 #starting_a_team{
     background: url('images/blog_photos/starting_a_team.png') no-repeat;
-    /* Change background-size: cover; to background-size: contain; if full picture is need, or cut-off */
-    background-size: contain;
-    background-clip: border-box;
+    /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
+    background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
 #purpose_of_marketing{
     background: url('images/blog_photos/purpose_of_marketing.jpg') no-repeat;
-    /* Change background-size: cover; to background-size: contain; if full picture is need, or cut-off */
+    /* Change "background-size: cover;" to "background-size: contain; if full picture is need, or cut-off */
     background-size: cover;
-    background-clip: border-box;
     background-position: center;
     height: 100vh;
 }
