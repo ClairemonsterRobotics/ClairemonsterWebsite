@@ -283,7 +283,8 @@ h5 {
 }
 
 .contact_text {
-    color: #FF00CC;
+    color: #000000;
+    font-size: 3vw;
 }
 
 /* Contact.html (End) */
