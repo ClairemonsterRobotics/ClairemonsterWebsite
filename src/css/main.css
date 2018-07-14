@@ -473,6 +473,9 @@ hr {
 #spontable .demo-card-square.mdl-card {
     width: 320px;
     height: 320px;
+    border-style: solid;
+    border-width: medium;
+    border-color: blue;
 }
 #spontable td:nth-child(0){
     width:30%;
