@@ -475,7 +475,7 @@ hr {
     height: 320px;
     border-style: solid;
     border-width: medium;
-    border-color: blue;
+    shadow: blue;
 }
 #spontable td:nth-child(0){
     width:30%;
