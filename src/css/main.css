@@ -63,16 +63,6 @@
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-.bar1, .bar2, .bar3 a{
-float: left;
-display: block;
-color: #f2f2f2;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 17px;
-}
-
 </style>
 
 /* All use (Begin) */
@@ -507,15 +497,21 @@ hr {
 /* support.html (End) */
 
 /* sponsors.html (Begin) */
+
 #spontable {
     width:80%;
     margin-left:10%;
     margin-right:10%;
 }
 
+#spontable .mdl-card__actions {
+    font: 20px arial, sans-serif;
+}
+
 #spontable .demo-card-square.mdl-card {
     width: 320px;
     height: 320px;
+    font-size: 30px;
     border-style: solid;
     border-width: medium;
     shadow: blue;
@@ -542,6 +538,7 @@ hr {
     background-size: 90%;
     background-position: center;
     background-color: #fff
+
 }
 
 #sponsor_nasa .demo-card-square > .mdl-card__title {
