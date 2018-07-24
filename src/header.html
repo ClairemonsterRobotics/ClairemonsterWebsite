@@ -1,27 +1,24 @@
-<!-- Header Utilizes the Google Material Design Lite header feature.
-The headroom class allows the header bar to appear upon scrolling up -->
-<header class="mdl-layout__header">
-  <div class="mdl-layout__header-row">
-    <!--The <span> tag allows for the text to be inline with everything else.  The <a> tag is for the link.-->
-    <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemonster Robotics</a></span>
-    <!--Space between title and navigation__links-->
-    <div class="mdl-layout-spacer"></div>
-    <!--Links to other pages-->
-    <nav class="mdl-navigation headroom">
-      <a class="mdl-navigation__link" href="blog.html">Blog</a>
-      <a class="mdl-navigation__link" href="history.html">Our History</a>
-      <a class="mdl-navigation__link" href="contact.html">Contact</a>
-      <a class="mdl-navigation__link" href="sponsors.html">Sponsors</a>
-      <a class="mdl-navigation__link" href="sign_up.html">Sign Up</a>
-      <a class="mdl-navigation__link" href="support.html">Contribute</a>
-    </nav>
-  </div>
-  <!-- The div with class "mdl-layout__drawer" appears on mobile-->
+<div class="mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemonster Robotics</a></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="blog.html">Blog</a>
+        <a class="mdl-navigation__link" href="history.html">Our History</a>
+        <a class="mdl-navigation__link" href="contact.html">Contact</a>
+        <a class="mdl-navigation__link" href="sponsors.html">Sponsors</a>
+        <a class="mdl-navigation__link" href="sign_up.html">Sign Up</a>
+        <a class="mdl-navigation__link" href="support.html">Contribute</a>
+      </nav>
+    </div>
+  </header>
   <div class="mdl-layout__drawer">
-    <!--The <span> tag allows for the text to be inline with everything else.  The <a> tag is for the link.-->
-    <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemonster Robotics</a></span>
-    <!--Links to other pages-->
-    <nav class="mdl-navigation">
+    <span class="mdl-layout-title"> <a href="main.html">Clairemonster Robotics</a></span>
+    <nav class="mdl-navigation mdl-layout--large-screen-only">
       <a class="mdl-navigation__link" href="blog.html">Blog</a>
       <a class="mdl-navigation__link" href="history.html">Our History</a>
       <a class="mdl-navigation__link" href="contact.html">Contact</a>
@@ -30,5 +27,4 @@ The headroom class allows the header bar to appear upon scrolling up -->
       <a class="mdl-navigation__link" href="support.html">Contribute</a>
     </nav>
   </div>
-</header>
-<!--Header End -->
+</div>
