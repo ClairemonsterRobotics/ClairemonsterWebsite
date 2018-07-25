@@ -513,63 +513,12 @@ hr {
 
 /* sponsors.html (Begin) */
 
-#spontable {
-    width: 80%;
-    margin-left:10%;
-    margin-right:10%;
-}
-
-#spontable .mdl-card__actions {
-    font: 20px arial, sans-serif;
-}
-
-#spontable .demo-card-square.mdl-card {
-    width: auto;
-    height: auto;
-    font-size: 30px;
-    border-style: solid;
-    border-width: medium;
-    shadow: blue;
-}
-#spontable td:nth-child(0){
-    width:30%;
-}
-
-#spontable td:nth-child(2){
-    width:30%;
-}
-
-#spontable td:nth-child(1){
-    width:20%;
-}
-
-#spontable td:nth-child(3){
-    width:20%;
-}
-
-#sponsor_arc .demo-card-square > .mdl-card__title {
-    color: #fff;
-    background: url('images/Sponsor_logos/arc.png') bottom right 15% no-repeat;
-    background-size: 90%;
-    background-position: center;
-    background-color: #fff
-
-}
-
 #sponsor_arcs .demo-card-square > .mdl-card__title {
   background: url('images/Sponsor_logos/arc.png') no-repeat;
   /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
   background-size: contain;
   background-position: center;
   margin: 5px;
-}
-
-#sponsor_nasa .demo-card-square > .mdl-card__title {
-    color: #fff;
-    background: url('images/Sponsor_logos/nasa.png') bottom right 15% no-repeat;
-    background-size: 90%;
-    background-position: center;
-    background-color: #fff
 }
 
 #sponsor_nasas .demo-card-square > .mdl-card__title {
@@ -580,14 +529,6 @@ hr {
   margin: 5px;
 }
 
-#sponsor_first .demo-card-square > .mdl-card__title {
-    color: #fff;
-    background: url('images/Sponsor_logos/first1.png') bottom right 15% no-repeat;
-    background-size: 90%;
-    background-position: center;
-    background-color: #fff
-}
-
 #sponsor_firsts .demo-card-square > .mdl-card__title {
   background: url('images/Sponsor_logos/first1.png') no-repeat;
   /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
@@ -596,28 +537,12 @@ hr {
   margin: 5px;
 }
 
-#sponsor_mitchell .demo-card-square > .mdl-card__title {
-    color: #fff;
-    background: url('images/Sponsor_logos/mitchell.png') bottom right 15% no-repeat;
-    background-size: 90%;
-    background-position: center;
-    background-color: #fff
-}
-
 #sponsor_mitchells .demo-card-square > .mdl-card__title {
   background: url('images/Sponsor_logos/mitchell.png') no-repeat;
   /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
   background-size: contain;
   background-position: center;
   margin: 5px;
-}
-
-#sponsor_rotary .demo-card-square > .mdl-card__title {
-    color: #fff;
-    background: url('images/Sponsor_logos/rotary_foundation.png') bottom right 15% no-repeat;
-    background-size: 90%;
-    background-position: center;
-    background-color: #000000
 }
 
 #sponsor_rotarys .demo-card-square > .mdl-card__title {
@@ -629,13 +554,6 @@ hr {
   background-color: #000000;
 }
 
-#sponsor_qualcomm .demo-card-square > .mdl-card__title {
-    color: #fff;
-    background: url('images/Sponsor_logos/qualcomm.png') bottom right 15% no-repeat;
-    background-size: 90%;
-    background-position: center;
-    background-color: #fff
-}
 
 #sponsor_qualcomms .demo-card-square > .mdl-card__title {
   background: url('images/Sponsor_logos/qualcomm.png') no-repeat;
