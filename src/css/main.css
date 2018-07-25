@@ -513,7 +513,7 @@ hr {
 
 /* sponsors.html (Begin) */
 
-#sponsor_arcs .demo-card-square > .mdl-card__title {
+#sponsor_arc .demo-card-square > .mdl-card__title {
   background: url('images/Sponsor_logos/arc.png') no-repeat;
   /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
   background-size: contain;
@@ -521,7 +521,7 @@ hr {
   margin: 5px;
 }
 
-#sponsor_nasas .demo-card-square > .mdl-card__title {
+#sponsor_nasa .demo-card-square > .mdl-card__title {
   background: url('images/Sponsor_logos/nasa.png') no-repeat;
   /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
   background-size: contain;
@@ -529,7 +529,7 @@ hr {
   margin: 5px;
 }
 
-#sponsor_firsts .demo-card-square > .mdl-card__title {
+#sponsor_first .demo-card-square > .mdl-card__title {
   background: url('images/Sponsor_logos/first1.png') no-repeat;
   /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
   background-size: contain;
@@ -537,7 +537,7 @@ hr {
   margin: 5px;
 }
 
-#sponsor_mitchells .demo-card-square > .mdl-card__title {
+#sponsor_mitchell .demo-card-square > .mdl-card__title {
   background: url('images/Sponsor_logos/mitchell.png') no-repeat;
   /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
   background-size: contain;
@@ -545,7 +545,7 @@ hr {
   margin: 5px;
 }
 
-#sponsor_rotarys .demo-card-square > .mdl-card__title {
+#sponsor_rotary .demo-card-square > .mdl-card__title {
   background: url('images/Sponsor_logos/rotary_foundation.png') no-repeat;
   /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
   background-size: contain;
@@ -555,7 +555,7 @@ hr {
 }
 
 
-#sponsor_qualcomms .demo-card-square > .mdl-card__title {
+#sponsor_qualcomm .demo-card-square > .mdl-card__title {
   background: url('images/Sponsor_logos/qualcomm.png') no-repeat;
   /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
   background-size: contain;
