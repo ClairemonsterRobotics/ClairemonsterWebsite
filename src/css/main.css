@@ -474,6 +474,7 @@ hr {
 /* blog.html (Begin) */
 .mdl-card__supporting-text {
     margin: auto;
+    font-size: 20px;
 }
 
 #social_media_post {
