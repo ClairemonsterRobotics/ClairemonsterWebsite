@@ -134,7 +134,7 @@
     //Generate and display HTML code
     htmlArea.textContent =    "<!-- Generated from clairemonsterrobotics.com/blog_creator.html -->" + "\n" +
                               "<!-- " + "\"" + title + "\"" + " blog post-->" + "\n" +
-                              "<div id=" + "\"" + id + "_cell\" " + "class=\"mdl-cell mdl-cell--4-col\">" + "\n" +
+                              "<div id=" + "\"" + id + "_cell\" " + "class=\"mdl-cell mdl-cell--4-col mdl-cell--12-col-phone\">" + "\n" +
                               "    <div class=\"demo-card-square mdl-card mdl-shadow--2dp\">" + "\n" +
                               "     <!-- This id will style the background in CSS -->" + "\n" +
                               "     <div id=" + "\"" + id + "\" " + "class=\"mdl-card__title mdl-card--expand\">" + "\n" +
