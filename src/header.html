@@ -1,27 +1,13 @@
 <!-- Header Utilizes the Google Material Design Lite header feature.
 The headroom class allows the header bar to appear upon scrolling up -->
-<div class="mdl-js-layout">
+<input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+<label for="drawer-toggle" id="drawer-toggle-label"></label>
 <header class="mdl-layout__header">
   <div class="mdl-layout__header-row">
     <!--The <span> tag allows for the text to be inline with everything else.  The <a> tag is for the link.-->
-    <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemonster Robotics</a></span>
+    <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemonster Robotics</a> </span>
     <!--Space between title and navigation__links-->
     <div class="mdl-layout-spacer"></div>
-    <!--Links to other pages-->
-    <nav class="mdl-navigation headroom">
-      <a class="mdl-navigation__link" href="blog.html">Blog</a>
-      <a class="mdl-navigation__link" href="history.html">Our History</a>
-      <a class="mdl-navigation__link" href="contact.html">Contact</a>
-      <a class="mdl-navigation__link" href="sponsors.html">Sponsors</a>
-      <a class="mdl-navigation__link" href="sign_up.html">Sign Up</a>
-      <a class="mdl-navigation__link" href="support.html">Contribute</a>
-    </nav>
-  </div>
-</header>
-  <!-- The div with class "mdl-layout__drawer" appears on mobile-->
-  <div class="mdl-layout__drawer">
-    <!--The <span> tag allows for the text to be inline with everything else.  The <a> tag is for the link.-->
-    <span class="mdl-layout-title"> <a id="main_link" href="main.html">Clairemonster Robotics</a></span>
     <!--Links to other pages-->
     <nav class="mdl-navigation">
       <a class="mdl-navigation__link" href="blog.html">Blog</a>
@@ -32,5 +18,15 @@ The headroom class allows the header bar to appear upon scrolling up -->
       <a class="mdl-navigation__link" href="support.html">Contribute</a>
     </nav>
   </div>
-</div>
+</header>
+<nav id="drawer">
+   <ul>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="history.html">Our History</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="sponsors.html">Sponsors</a></li>
+      <li><a href="sign_up.html">Sign Up</a></li>
+      <li><a href="support.html">Contribute</a></li>
+   </ul>
+</nav>
 <!--Header End -->
