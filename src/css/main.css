@@ -137,6 +137,11 @@ h5 {
   width: 100%;
   text-align: center;
 }
+
+.flex_card{
+  width:100%;
+  height: 100%;
+}
 /* All use (End) */
 
 /* header.html (Begin) */
@@ -177,18 +182,18 @@ h5 {
     background: rgba(255, 255, 255, .0);
     z-index: 1;
   }
-  /* adds our "hamburger" menu icon */
 
+  /* adds our "hamburger" menu icon */
   #drawer-toggle-label:before {
     content: '';
     display: block;
     position: absolute;
     height: 2px;
     width: 24px;
-    background: #8d8d8d;
+    background: black;
     left: 13px;
     top: 18px;
-    box-shadow: 0 6px 0 #8d8d8d, 0 12px 0 #8d8d8d;
+    box-shadow: 0 6px 0 black, 0 12px 0 black;
   }
 
   header {
@@ -570,54 +575,61 @@ hr {
 
 /* sponsors.html (Begin) */
 
-#sponsor_arc .demo-card-square > .mdl-card__title {
+#sponsor_arc .flex_card > .mdl-card__title {
   background: url('images/Sponsor_logos/arc.png') no-repeat;
   /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
   background-size: contain;
   background-position: center;
-  margin: 5px;
+  padding: 100px;
+margin: 5px;
 }
 
-#sponsor_nasa .demo-card-square > .mdl-card__title {
+#sponsor_nasa .flex_card > .mdl-card__title {
   background: url('images/Sponsor_logos/nasa.png') no-repeat;
   /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
   background-size: contain;
   background-position: center;
-  margin: 5px;
+  padding: 100px;
+margin: 5px;
 }
 
-#sponsor_first .demo-card-square > .mdl-card__title {
+#sponsor_first .flex_card > .mdl-card__title {
   background: url('images/Sponsor_logos/first1.png') no-repeat;
   /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
   background-size: contain;
   background-position: center;
-  margin: 5px;
+  padding: 100px;
+margin: 5px;
 }
 
-#sponsor_mitchell .demo-card-square > .mdl-card__title {
+#sponsor_mitchell .flex_card > .mdl-card__title {
   background: url('images/Sponsor_logos/mitchell.png') no-repeat;
   /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
   background-size: contain;
   background-position: center;
-  margin: 5px;
+  padding: 100px;
+margin: 5px;
 }
 
-#sponsor_rotary .demo-card-square > .mdl-card__title {
+#sponsor_rotary .flex_card > .mdl-card__title {
   background: url('images/Sponsor_logos/rotary_foundation.png') no-repeat;
   /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
   background-size: contain;
   background-position: center;
-  margin: 5px;
+  padding: 100px;
+margin: 5px;
   background-color: #000000;
 }
 
 
-#sponsor_qualcomm .demo-card-square > .mdl-card__title {
+#sponsor_qualcomm .flex_card > .mdl-card__title {
   background: url('images/Sponsor_logos/qualcomm.png') no-repeat;
   /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
   background-size: contain;
   background-position: center;
-  margin: 5px;
+  padding: 100px;
+margin: 5px;
+  
 }
 
 /* sponsors.html (End) */
