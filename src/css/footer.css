@@ -1,0 +1,32 @@
+#footerTitle{
+  font-size: 44pt;
+  font-weight: bold;
+  padding-left: 8px;
+  color: rgb(158, 158, 158);
+  font-family: "Roboto";
+  text-shadow: 1px 1px white;
+}
+
+footer {
+  background-color: rgb(66, 66, 66);
+  width: 100%;
+  z-index: auto;
+}
+
+footer table {
+  width: 100%;
+}
+
+footer td {
+  vertical-align: top;
+}
+
+footer #row1 {
+  width: 60%
+}
+
+
+footer #row2 {
+  width: 20%;
+  text-align: center;
+}

@@ -1,0 +1,102 @@
+header {
+    position: fixed;
+    width: 100%;
+    padding-bottom: 0;
+    z-index: 2;
+    top: 0;
+    clear: right;
+    border: none;
+}
+#headerTop {
+  display:flex;
+  width:100%;
+  background-color: rgb(63, 81, 181);
+}
+header #teamNumber {
+    font-size: 32pt;
+    font-weight: bold;
+    margin: 16px;
+    color: white;
+    width:100%;
+    text-align: right;
+    white-space: nowrap;
+}
+header #title {
+  font-size: 32pt;
+  margin: 16px;
+  white-space: nowrap;
+  height:auto;
+}
+
+.bigLink{
+    border-bottom: 3px solid orange;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+.bigLink:hover{
+  border-bottom-color: yellow;
+  color: rgb(158, 158, 158);
+}
+.bigLink:active{
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 2px 2px rgb(0,0,0);
+}
+#headerGraphic{
+  display:flex;
+  height:50px;
+  width:75px;
+  float:left;
+}
+#headerGraphicLogo{
+    width: 75px;
+    height:auto;
+    background-color: rgb(63, 81, 181);;
+    background-image: url("../img/logo_2019.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#headerGraphicShape{
+    width: 50px;
+    height:auto;
+    background: rgb(63, 81, 181);;
+    border-radius: 0 0 100px 0;
+    -moz-border-radius: 0 0 100px 0;
+    -webkit-border-radius: 0 0 100px 0;
+}
+#headerLinksShape{
+    width: 25px;
+    height: auto;
+    background: rgb(63, 81, 181);
+    border-radius: 0 0 0 100px;
+    -moz-border-radius: 0 0 0 100px;
+    -webkit-border-radius: 0 0 0 100px;
+    display:block;
+}
+#headerSpacer{
+  height:25px;
+  width:100%;
+}
+#headerLinks {
+  display:flex;
+  justify-content: right;
+  float:right;
+  width:auto;
+}
+#headerLinksBar {
+  height:auto;
+  background: rgb(63, 81, 181);
+  display:flex;
+  justify-content: right;
+  overflow-x: hidden;
+}
+#headerLinksBar a {
+  padding: 0px 6px 0 6px;
+  white-space:nowrap;
+  border-right: 1px solid rgb(158, 158, 158);
+}
+
+#headerLinksBar a:last-child {
+  border-right: none
+}

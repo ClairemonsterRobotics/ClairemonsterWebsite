@@ -1,0 +1,94 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  font-family: "Roboto";
+}
+#content {
+  margin-top: 60px;
+  z-index: auto;
+  background-color: white;
+  border: none;
+  height:1200px;
+}
+text{
+  font-family: "Roboto";
+}
+h1 {
+  margin: 0;
+  color: #305b9b;
+  font-family: "Comic Sans MS";
+  font-size: 40pt;
+  width: 100%;
+  text-align: center;
+  border-width: 3px;
+  border-color: #01661a;
+  border-top-style: dashed;
+  padding-top: 12px;
+}
+
+h2 {
+  /*Page Subtitles*/
+  margin: 0;
+  margin-bottom: 10px;
+  color: #1b2e47;
+  font-family: "Comic Sans MS";
+  font-size: 18pt;
+  border-bottom-style: dashed;
+  width: 100%;
+  text-align: center;
+  border-width: 3px;
+  border-color: #01661a;
+  border-bottom-style: dashed;
+  padding-bottom: 12px;
+}
+
+h3 {
+  /*Section Titles*/
+  color: #ff6709;
+  font-family: "Comic Sans MS";
+  margin: 12px 4% 0 4%;
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-size: 20pt;
+}
+
+h4 {
+  /*Section Subtitles*/
+  color: #182934;
+  font-family: "Comic Sans MS";
+  margin: 6px 8% 0 8%;
+  font-size: 16pt;
+}
+
+h5 {
+  /*ShortList Titles*/
+  color: #182934;
+  font-family: "Comic Sans MS";
+  margin: 2px;
+  font-size: 12px;
+  width: calc(100%-4px);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+h6 {
+  /*ShortList Element*/
+  color: #182934;
+  font-family: "Comic Sans MS";
+  margin: 2px;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 2px;
+}
+
+p {
+  color: #182934;
+  font-family: "Comic Sans MS";
+  margin: 0 8% 0 8%;
+  text-indent: 36px;
+  font-size: 12pt;
+}
