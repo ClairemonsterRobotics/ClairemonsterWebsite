@@ -24,6 +24,7 @@ header #teamNumber {
 header #title {
   font-size: 32pt;
   margin: 16px;
+  font-weight: bold;
   white-space: nowrap;
   height:auto;
 }
@@ -32,7 +33,9 @@ header #title {
     border-bottom: 3px solid orange;
     text-decoration: none;
     color:white;
-    font-weight: bold;
+    -webkit-transition: border-bottom-color 1s; /* Safari */
+    transition: color 0.3s;
+    transition: color 0.3s;
 }
 .bigLink:hover{
   border-bottom-color: yellow;
@@ -92,11 +95,13 @@ header #title {
   overflow-x: hidden;
 }
 #headerLinksBar a {
-  padding: 0px 6px 0 6px;
+  padding: 0px 10px 0 10px;
   white-space:nowrap;
-  border-right: 1px solid rgb(158, 158, 158);
+  border-right: 1px dotted rgb(158, 158, 158);
 }
-
+#headerLinksBar a:first-child {
+  padding-left: 5px;
+}
 #headerLinksBar a:last-child {
-  border-right: none
+  border-right: none;
 }
