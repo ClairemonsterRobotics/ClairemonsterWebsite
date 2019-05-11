@@ -5,90 +5,626 @@ body {
 a {
   font-family: "Roboto";
 }
-#content {
-  margin-top: 60px;
-  z-index: auto;
-  background-color: white;
-  border: none;
-  height:1200px;
-}
 text{
   font-family: "Roboto";
 }
-h1 {
-  margin: 0;
-  color: #305b9b;
-  font-family: "Comic Sans MS";
-  font-size: 40pt;
-  width: 100%;
-  text-align: center;
-  border-width: 3px;
-  border-color: #01661a;
-  border-top-style: dashed;
-  padding-top: 12px;
+#content {
+  margin-top: 85px;
+  z-index: auto;
+  background-color: white;
+  border: none;
 }
-
-h2 {
-  /*Page Subtitles*/
-  margin: 0;
-  margin-bottom: 10px;
-  color: #1b2e47;
-  font-family: "Comic Sans MS";
-  font-size: 18pt;
-  border-bottom-style: dashed;
-  width: 100%;
-  text-align: center;
-  border-width: 3px;
-  border-color: #01661a;
-  border-bottom-style: dashed;
-  padding-bottom: 12px;
+/*Links*/
+.bigLink{
+    border-bottom: 3px solid orange;
+    text-decoration: none;
+    color:white;
+    -webkit-transition: border-bottom-color 1s; /* Safari */
+    -webkit-transition: color 0.3s; /* Safari */
+    transition: border-bottom 1s;
+    transition: color 0.3s;
 }
+.bigLink:hover{
+  border-bottom-color: yellow;
+  color: rgb(158, 158, 158);
+}
+.bigLink:active{
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 2px 2px rgb(0,0,0);
+}
+.medLink{
+    border-bottom: 2px solid orange;
+    text-decoration: none;
+    color: rgb(158, 158, 158);
+    -webkit-transition: border-bottom-color 1s; /* Safari */
+    -webkit-transition: color 0.3s; /* Safari */
+    transition: border-bottom-color 1s;
+    transition: color 0.3s;
+}
+.medLink:hover{
+  border-bottom-color: yellow;
+  color: white;
+}
+.medLink:active{
+  color: rgb(158, 158, 158);
+  text-shadow: 0px 2px 2px rgb(0,0,0);
+}
+/*Leader Cards*/
+.leaderCard{
+  display:flex;
+}
+.leaderCard>img{
+    width:80%;
+    height:80%;
+    padding-left:10%;
+    border-radius: 50%;
+}
+.leaderCard>h4{
+  white-space: nowrap;
+  margin:0;
+  color:rgb(30, 35, 40);
+  font-size: 20px;
+  font-weight: 700;
+  padding:10px;
+  text-align: center;
+  font-family: "helvetica";
+  overflow-x:hidden;
+}
+.leaderCard>h5{
+  white-space: nowrap;
+  margin:0;
+  color:rgb(30, 35, 40);
+  font-size: 16px;
+  font-weight: 700;
+  padding:6px;
+  text-align: center;
+  font-family: "helvetica";
+  overflow-x:hidden;
+}
+.iconLink{
+    border-bottom: 3px solid orange;
+    padding:2px;
+}
+.iconLink:hover{
+    border-bottom-color: yellow;
+    filter: blur(0.5px);
+    -webkit-filter: blur(0.5px);
+}
+.leaderCardIcons{
+  display:flex;
+  justify-content: center;
+}
+.leaderCardIcons>a{
+  margin: 4px;
+}
+#leaderCards{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+/* All use (Begin) */
 
 h3 {
-  /*Section Titles*/
-  color: #ff6709;
-  font-family: "Comic Sans MS";
-  margin: 12px 4% 0 4%;
-  margin-top: 12px;
-  margin-bottom: 0;
-  font-size: 20pt;
-}
-
-h4 {
-  /*Section Subtitles*/
-  color: #182934;
-  font-family: "Comic Sans MS";
-  margin: 6px 8% 0 8%;
-  font-size: 16pt;
-}
-
-h5 {
-  /*ShortList Titles*/
-  color: #182934;
-  font-family: "Comic Sans MS";
-  margin: 2px;
-  font-size: 12px;
-  width: calc(100%-4px);
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-h6 {
-  /*ShortList Element*/
-  color: #182934;
-  font-family: "Comic Sans MS";
-  margin: 2px;
-  font-size: 12px;
-  line-height: 12px;
-  margin-bottom: 5px;
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 2px;
+    text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 p {
-  color: #182934;
-  font-family: "Comic Sans MS";
-  margin: 0 8% 0 8%;
-  text-indent: 36px;
-  font-size: 12pt;
+    text-indent: 5em;
+    margin: 10px 0;
 }
+
+.center {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.card_title {
+    padding-top: 50px;
+    align-self: center;
+    font-weight: bold;
+    color: 'mdl-color-accent';
+}
+
+.card_format {
+    background: lightgray;
+    width: 90vw;
+}
+
+.card_text {
+    color: black;
+    font-size: 20px;
+}
+
+.spacer {
+    padding: 25px;
+}
+
+.mdl-card__title-text {
+    color: #fff;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.demo-card-square {
+    width: 100%;
+    height: 20vw;
+}
+
+.demo-card-wide {
+    width: 50vw;
+    height: 20vw;
+}
+
+.demo-card-medium {
+    width: 40vw;
+    height: 20vw;
+}
+
+.full_grid {
+    width: 80vw;
+}
+
+.contain_grid {
+    width: auto;
+}
+
+.full_card {
+    width: 80vw;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.circle {
+    width: 50%;
+    padding: 25% 0;
+    border-radius: 50%;
+}
+
+.mdl-grid h4,
+h5 {
+    text-align: center;
+    margin: 0;
+    padding: 0.1em;
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.blue {
+    background: blue;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.center-horiz {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-vert {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.github-icon {
+    background-image: url("images/github.ico");
+    width: 32px;
+    height: 32px;
+}
+
+.icon {
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+
+.blue_outline{
+  border-style: solid;
+  border-width: medium;
+  shadow: blue;
+}
+
+.center_text{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.flex_card{
+  width:100%;
+  height: 100%;
+}
+/* All use (End) */
+/* Main.html (Begin) */
+
+.hero h1 {
+    /* Align and style text */
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14.8vw;
+}
+
+/* Big introductory image */
+
+.hero {
+    /* Max width */
+    width: 100vw;
+    /* Max height */
+    height: 100vh;
+
+    /* Center horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*Background*/
+    background-image: url('images/team_photo.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* Parallax image setting*/
+    background-attachment: fixed;
+}
+
+/* Puts a space underneath all <div> tags inside of the grid taged officers_grid */
+
+#officers_grid > div {
+    margin-bottom: 0%;
+}
+
+/*Next classes are for the images of our leadership team
+		To update, change image url
+		Will adjust to size of screen
+		1em margin will put a 1 font-size gap between picture and text */
+
+#officer_captain {
+    background: url('images/main/CharlieJenkins.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_co_captain {
+    background-image: url('images/main/KeaganHolmes.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_programming {
+    background-image: url('images/main/DerekMcCauley.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_marketing {
+    background-image: url('images/main/EvieGill.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_build_design {
+    background-image: url('images/main/AlecShu.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_secretary {
+    background-image: url('images/main/ErickaSanchez.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_treasurer {
+    background-image: url('images/main/GenaTrepte.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+/* Formatting of next id classes are for grid images and will resize to the screen
+		 Contain property will cause it to expand and contract */
+
+#contact_image {
+    background: url('images/main/contact.jpg') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#current_image {
+    background: url('images/current.JPG') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#our_team_image {
+    background: url('images/our_team.JPG') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* Main.html (End) */
+
+/* Contact.html (End) */
+
+.contact {
+    margin: 0 auto;
+    width: 90vw;
+    height: 40vh;
+}
+
+.contact_text {
+    color: #000000;
+    font-size: 3vw;
+}
+
+/* Contact.html (End) */
+
+/*History.html (Begin)*/
+
+#history_articles h1 {
+    text-align: center;
+}
+
+hr {
+    margin-left: 6.3vw;
+    margin-right: 6.3vw;
+}
+
+#history_articles p {
+    text-align: left;
+    margin-right: 12vw;
+    margin-left: 1vw;
+    color: #000000;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#history_articles iframe {
+    margin-left: 12vw;
+    width: 48vw;
+    height: 27vw;
+}
+
+#history_articles img {
+    width: 35vw;
+    height: auto;
+    margin-left: 12vw;
+    display: block;
+}
+
+#history_grid {
+    width: 90%;
+}
+
+#card_2015 .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/history_photos/2015.jpg');
+    background-size: cover;
+}
+
+#card_2016 .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/history_photos/2016.jpg');
+    background-size: cover;
+}
+
+#card_2017 .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/history_photos/2017.jpg');
+    background-size: cover;
+}
+
+#card_2018 .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/history_photos/2018.jpg');
+    background-size: cover;
+}
+
+#main_link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*History.html (End)*/
+
+
+
+
+/* sign_up.html (Begin)*/
+
+/* sign_up.html (End) */
+
+
+
+
+/* blog.html (Begin) */
+.mdl-card__supporting-text {
+    margin: auto;
+    font-size: 20px;
+}
+
+#social_media_post {
+    background: url('images/blog_photos/example_post.png');
+    background-size: cover;
+}
+
+#blog_post {
+    background: url('images/blog_photos/blogging.png');
+    background-size: cover;
+}
+
+#blog_grid {
+    width: 80vw;
+}
+
+#social_media_grid {
+    position: relative;
+    width: 80vw;
+}
+
+#facebook {
+    width: 500px;
+}
+
+#our_philosophy {
+    background: url('images/blog_photos/blogging.png') no-repeat;
+    /* Expand image so there is no white space */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#ericka {
+    background: url('images/blog_photos/ericka.png') no-repeat;
+    /* Expand image so there is no white space */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#open_source {
+    background: url('images/blog_photos/open_source.png') no-repeat;
+    /* Shrink the image so whole thing fits */
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Generated from clairemonsterrobotics.com/blog_creator.html */
+#starting_a_team{
+    background: url('images/blog_photos/starting_a_team.png') no-repeat;
+    /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#purpose_of_marketing{
+    background: url('images/blog_photos/purpose_of_marketing.jpg') no-repeat;
+    /* Change "background-size: cover;" to "background-size: contain; if full picture is need, or cut-off */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Put new blog css elements here! */
+
+
+/* blog.html (End) */
+
+/* support.html (Begin) */
+
+#paypal {
+    background: url('images/paypal_button.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#mentors {
+    background: url('images/mentors.JPG') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#corporations {
+    background: url('images/sponsors.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* support.html (End) */
+
+/* sponsors.html (Begin) */
+
+#sponsor_arc .flex_card > .mdl-card__title {
+  background: url('images/Sponsor_logos/arc.png') no-repeat;
+  /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
+  background-size: contain;
+  background-position: center;
+  padding: 100px;
+margin: 5px;
+}
+
+#sponsor_nasa .flex_card > .mdl-card__title {
+  background: url('images/Sponsor_logos/nasa.png') no-repeat;
+  /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
+  background-size: contain;
+  background-position: center;
+  padding: 100px;
+margin: 5px;
+}
+
+#sponsor_first .flex_card > .mdl-card__title {
+  background: url('images/Sponsor_logos/first1.png') no-repeat;
+  /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
+  background-size: contain;
+  background-position: center;
+  padding: 100px;
+margin: 5px;
+}
+
+#sponsor_mitchell .flex_card > .mdl-card__title {
+  background: url('images/Sponsor_logos/mitchell.png') no-repeat;
+  /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
+  background-size: contain;
+  background-position: center;
+  padding: 100px;
+margin: 5px;
+}
+
+#sponsor_rotary .flex_card > .mdl-card__title {
+  background: url('images/Sponsor_logos/rotary_foundation.png') no-repeat;
+  /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
+  background-size: contain;
+  background-position: center;
+  padding: 100px;
+margin: 5px;
+  background-color: #000000;
+}
+
+
+#sponsor_qualcomm .flex_card > .mdl-card__title {
+  background: url('images/Sponsor_logos/qualcomm.png') no-repeat;
+  /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
+  background-size: contain;
+  background-position: center;
+  padding: 100px;
+margin: 5px;
+
+}
+
+/* sponsors.html (End) */
+
+/* blog_creator.html (Begin) */
+  code {
+      background: hsl(220, 80%, 90%);
+  }
+
+  pre {
+      white-space: pre-wrap;
+      background: hsl(30,80%,90%);
+  }
+  .text_no_margin {
+    text-align: center;
+    margin: 0;
+    padding: 0.1em;
+  }
+/* blog_creator.html (Begin) */

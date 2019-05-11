@@ -6,11 +6,12 @@ header {
     top: 0;
     clear: right;
     border: none;
+    line-height: normal;
 }
 #headerTop {
   display:flex;
   width:100%;
-  background-color: rgb(63, 81, 181);
+  background: rgb(63, 81, 181);
 }
 header #teamNumber {
     font-size: 32pt;
@@ -28,23 +29,6 @@ header #title {
   white-space: nowrap;
   height:auto;
 }
-
-.bigLink{
-    border-bottom: 3px solid orange;
-    text-decoration: none;
-    color:white;
-    -webkit-transition: border-bottom-color 1s; /* Safari */
-    transition: color 0.3s;
-    transition: color 0.3s;
-}
-.bigLink:hover{
-  border-bottom-color: yellow;
-  color: rgb(158, 158, 158);
-}
-.bigLink:active{
-  color: rgb(255, 255, 255);
-  text-shadow: 0px 2px 2px rgb(0,0,0);
-}
 #headerGraphic{
   display:flex;
   height:50px;
@@ -55,7 +39,7 @@ header #title {
     width: 75px;
     height:auto;
     background-color: rgb(63, 81, 181);;
-    background-image: url("../img/logo_2019.png");
+    background-image: url("images/logo_2019.png");
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -77,10 +61,6 @@ header #title {
     -webkit-border-radius: 0 0 0 100px;
     display:block;
 }
-#headerSpacer{
-  height:25px;
-  width:100%;
-}
 #headerLinks {
   display:flex;
   justify-content: right;
@@ -95,7 +75,7 @@ header #title {
   overflow-x: hidden;
 }
 #headerLinksBar a {
-  padding: 0px 10px 0 10px;
+  padding: 0px 10px 2px 10px;
   white-space:nowrap;
   border-right: 1px dotted rgb(158, 158, 158);
 }

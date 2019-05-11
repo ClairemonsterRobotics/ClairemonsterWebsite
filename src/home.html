@@ -1,25 +1,241 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="css/header.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/footer.css">
-  <title>Home - Clairemonster Robotics</title>
-  <script src="javascript/main.js"></script>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-  </script>
-  <script>initDocument();</script>
-</head>
-<body>
-  <div id="headerDiv"></div>
-  <div id="headerSpacer"></div>
-  <div id="content">
-
-  </div>
-  <div id="footerDiv"></div>
-</body>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <title>Home - Clairemonster Robotics</title>
+    <!--Imported CSS-->
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-deep_orange.min.css">
+    <!--All of the images to correctly display logo in tab for all browsers
+      All favicons created with: https://realfavicongenerator.net -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--Scripts-->
+    <script src="javascript/main.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>initDocument();</script>
+  </head>
+  <body>
+    <div id="headerDiv"></div>
+    <div id="headerSpacer"></div>
+    <div id="content" class="mdl-layout">
+    <div class="mdl-layout">
+      <section class="hero">
+        <h1>Clairemonster </h1>
+      </section>
+      <!--This section outlines the "Our Team" segment -->
+      <!--A "card" is defined by a section with a background and a shadow. There are three parts.
+        A title, and two boxes layed out horizontally to each other-->
+      <h2 class="card_title">OUR TEAM</h2>
+      <!--Grid which holds an image on one side and text on the other-->
+      <div class="mdl-grid mdl-shadow--4dp card_format">
+        <!--IMAGE
+          our_team_image id sets correct image
+          Will hide on smaller screens-->
+        <div id="our_team_image" class="mdl-cell mdl-cell--6-col"></div>
+        <!--TEXT-->
+        <div class="mdl-cell mdl-cell--6-col card_text">
+          We are FIRST Robotics team Clairemonster 5474.  We are dedicated to robotics in all forms.  We focus on designing, building, programming, and marketing our robots in order to propogate robotics.  It is our philosophy that everybody can do anything they want on our team, so we teach them what they want to learn.
+          <br>
+          <!-- Accent-colored raised button with ripple -->
+          <a href="history.html#article_2018" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+          Click for more info
+          </a>
+        </div>
+      </div>
+      <!--END SEGMENT-->
+      <!--This section outlines the "Our Team" segment -->
+      <!--A "card" is defined by a section with a background and a shadow. There are three parts.
+        A title, and two boxes layed out horizontally to each other-->
+      <h2 class="card_title">OUR CURRENT YEAR</h2>
+      <!--Grid which holds an image on one side and text on the other-->
+      <div class="mdl-grid mdl-shadow--4dp card_format">
+        <!--TEXT-->
+        <div class="mdl-cell mdl-cell--6-col card_text">
+          It is our fifth year as a FIRST team.  This year is our first without the students who founded our team. Last year we were semi-finalists for the first time in team history, and hope to continue our success.
+          <br>
+          <!-- Colored raised button with ripple -->
+          <a href="blog.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+          Click for more info
+          </a>
+        </div>
+        <!--IMAGE
+          current_image id sets correct image
+          Will hide on smaller screens-->
+        <div id="current_image" class="mdl-cell mdl-cell--6-col"></div>
+      </div>
+      <!--END SEGMENT-->
+      <!--This section outlines the "Contact US" segment -->
+      <!--A "card" is defined by a section with a background and a shadow. There are three parts.
+        A title, and two boxes layed out horizontally to each other-->
+      <h2 class="card_title">CONTACT US</h2>
+      <!--Grid which holds an image on one side and text on the other-->
+      <div class="mdl-grid mdl-shadow--4dp card_format">
+        <!--IMAGE
+          contact_image id sets correct image
+          Will hide on smaller screens-->
+        <div id="contact_image" class="mdl-cell mdl-cell--6-col"></div>
+        <!--TEXT-->
+        <div class="mdl-cell mdl-cell--6-col card_text">
+          We want to help others.  If you are a rookie team, or an experienced team looking for some help, contact us.  All of the website source code is on <a href="https://github.com/ClairemonsterRobotics/ClairemonsterWebsite" target="_blank">our github</a> and we are always available if you want to learn something!
+          <br>
+          <!-- Accent-colored raised button with ripple
+            Link to Contact page
+            target="_blank" opens link in new page-->
+          <a href="contact.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" target="_blank">
+          Contact Us!
+          </a>
+        </div>
+      </div>
+      <!--END SEGMENT-->
+      <!-- CSS class to put 25px  of padding between contact info and footer-->
+      <div class="spacer"></div>
+      <!-- Our Officers Segment -->
+      <h2 class="card_title">TEAM LEADERSHIP</h2>
+      <div id="officers_grid" class="mdl-grid full_grid">
+        <!-- Circle with picture of captain -->
+        <div class="mdl-cell mdl-cell--4-col">
+          <!-- Centered Circle -->
+          <div id="officer_captain" class="circle center"></div>
+          <!-- Title -->
+          <h5 class="center">Captain</h5>
+          <!-- Name -->
+          <h4 class="center">Charlie Jenkins</h4>
+          <!-- Centered icons next to each other -->
+          <div class="mdl-grid">
+            <div class="center-horiz">
+              <!-- MDL email icon -->
+              <a href="mailto:sandiegocharlie@gmail.com" class="icon" target="_blank">
+              <img src="css/images/email.png" alt="email">
+              </a>
+              <!-- github icon -->
+              <a href="https://github.com/BestCharlemagne" class="icon" target="_blank">
+              <img src="css/images/github.ico" alt="github">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Circle with picture of co-captain -->
+        <div class="mdl-cell mdl-cell--4-col">
+          <!-- Centered Circle -->
+          <div id="officer_co_captain" class="circle center"></div>
+          <!-- Title -->
+          <h5 class="center">Co-Captain</h5>
+          <!-- Name -->
+          <h4 class="center">Keagan Holmes</h4>
+          <!-- Centered icons next to each other -->
+          <div class="mdl-grid">
+            <div class="center-horiz">
+              <!-- github icon -->
+              <a href="https://github.com/keaganchs" class="icon" target="_blank">
+              <img src="css/images/github.ico" alt="github">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Circle with picture of head of programming -->
+        <div class="mdl-cell mdl-cell--4-col">
+          <!-- Centered Circle -->
+          <div id="officer_programming" class="circle center"></div>
+          <!-- Title -->
+          <h5 class="center">Head of Programming</h5>
+          <!-- Name -->
+          <h4 class="center">Derek McCauley</h4>
+          <!-- Centered icons next to each other -->
+          <div class="mdl-grid">
+            <div class="center-horiz">
+              <!-- github icon -->
+              <a href="https://github.com/Derek-McCauley2002" class="icon" target="_blank">
+              <img src="css/images/github.ico" alt="github">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Circle with picture of head of build/design -->
+        <div class="mdl-cell mdl-cell--4-col">
+          <!-- Centered Circle -->
+          <div id="officer_build_design" class="circle center"></div>
+          <!-- Title -->
+          <h5 class="center">Head of Build/Design</h5>
+          <!-- Name -->
+          <h4 class="center">Alec Schu</h4>
+          <!-- Centered icons next to each other -->
+          <div class="mdl-grid">
+            <div class="center-horiz">
+              <!-- github icon -->
+              <a href="https://www.instagram.com/alec-schu" class="icon" target="_blank">
+              <img src="css/images/instagram-icon.png" alt="instagram" height="32px" width="32px">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Circle with picture of head of marketing -->
+        <div class="mdl-cell mdl-cell--4-col">
+          <!-- Centered Circle -->
+          <div id="officer_marketing" class="circle center"></div>
+          <!-- Title -->
+          <h5 class="center">Head of Marketing</h5>
+          <!-- Name -->
+          <h4 class="center">Evie Gill</h4>
+          <!-- Centered icons next to each other -->
+          <div class="mdl-grid">
+            <div class="center-horiz">
+              <!-- instagram icon -->
+              <a href="https://www.instagram.com/spirits71111/" class="icon" target="_blank">
+              <img src="css/images/instagram-icon.png" alt="instagram" height="32px" width="32px">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Circle with picture of secretary -->
+        <div class="mdl-cell mdl-cell--4-col">
+          <!-- Centered Circle -->
+          <div id="officer_secretary" class="circle center"></div>
+          <!-- Title -->
+          <h5 class="center">Secretary</h5>
+          <!-- Name -->
+          <h4 class="center">Ericka Sanchez</h4>
+          <!-- Centered icons next to each other -->
+          <div class="mdl-grid">
+            <div class="center-horiz">
+              <!-- github icon -->
+              <a href="https://www.instagram.com/erickazanches/" class="icon" target="_blank">
+              <img src="css/images/instagram-icon.png" alt="instagram" height="32px" width="32px">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Circle with picture of head of treasurer -->
+        <div class="mdl-cell mdl-cell--4-col">
+          <!-- Centered Circle -->
+          <div id="officer_treasurer" class="circle center"></div>
+          <!-- Title -->
+          <h5 class="center">Treasurer</h5>
+          <!-- Name -->
+          <h4 class="center">Gena Trepte</h4>
+          <!-- Centered icons next to each other -->
+          <div class="mdl-grid">
+            <div class="center-horiz">
+              <!-- instagram icon -->
+              <a href="https://www.instagram.com/gennnna" class="icon" target="_blank">
+              <img src="css/images/instagram-icon.png" alt="instagram" height="32px" width="32px">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CSS class to put 25px  of padding between contact info and footer-->
+      <div class="spacer"></div>
+    </div>
+    <div id="footerDiv"></div>
+  </body>
 </html>

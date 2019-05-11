@@ -44,6 +44,7 @@ function initDesktopHeader() {
     headerLinks = header.querySelector("#headerLinks");
     headerLinksShape = headerLinks.querySelector("#headerLinksShape");
     headerLinksBar = headerLinks.querySelector("#headerLinksBar");
+
     checkDesktopHeaderBar();
 };
 function checkDesktopHeaderBar(){

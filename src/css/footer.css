@@ -1,32 +1,21 @@
-#footerTitle{
-  font-size: 44pt;
-  font-weight: bold;
-  padding-left: 8px;
-  color: rgb(158, 158, 158);
-  font-family: "Roboto";
-  text-shadow: 1px 1px white;
-}
 
 footer {
   background-color: rgb(66, 66, 66);
   width: 100%;
   z-index: auto;
+  height: 100px;
+  display:flex;
+  align-items: center;
 }
-
-footer table {
-  width: 100%;
+footer a{
+  font-size: 11pt;
+  padding: 0pt;
+  margin-left: 11pt;
+  font-family: "Roboto";
 }
-
-footer td {
-  vertical-align: top;
-}
-
-footer #row1 {
-  width: 60%
-}
-
-
-footer #row2 {
-  width: 20%;
-  text-align: center;
+footer text{
+  font-size: 11pt;
+  color: white;
+  font-family: "Roboto";
+  padding: 11pt;
 }
