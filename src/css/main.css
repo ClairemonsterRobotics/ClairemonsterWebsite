@@ -312,14 +312,14 @@ h5 {
 		1em margin will put a 1 font-size gap between picture and text */
 
 #officer_captain {
-    background: url('images/main/CharlieJenkins.jpg');
+    background: url('images/main/KeaganHolmes.jpg');
     background-size: cover;
     background-position: center center;
     margin-bottom: 1em;
 }
 
 #officer_co_captain {
-    background-image: url('images/main/KeaganHolmes.jpg');
+    background-image: url('images/main/AlecShu.jpg');
     background-size: cover;
     background-position: center center;
     margin-bottom: 1em;
@@ -340,21 +340,21 @@ h5 {
 }
 
 #officer_build_design {
-    background-image: url('images/main/AlecShu.jpg');
+    background-image: url('images/main/notmatthew.jpg');
     background-size: cover;
     background-position: center center;
     margin-bottom: 1em;
 }
 
 #officer_secretary {
-    background-image: url('images/main/ErickaSanchez.jpg');
+    background-image: url('images/main/notsierrra.jpg');
     background-size: cover;
     background-position: center center;
     margin-bottom: 1em;
 }
 
 #officer_treasurer {
-    background-image: url('images/main/GenaTrepte.jpg');
+    background-image: url('images/main/notdrew.jpg');
     background-size: cover;
     background-position: center center;
     margin-bottom: 1em;
