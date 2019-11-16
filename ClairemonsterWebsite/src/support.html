@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <!--Imported CSS-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-deep_orange.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/headroom.css">
+  <!--Imported Javascript-->
+  <script src="js/index.js"></script>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+  <!--Title in tab-->
+  <head>
+    <meta charset="UTF-8">
+    <title>Clairemonster Robotics</title>
+    <!--All of the images to correctly display logo in tab for all browsers
+    All favicons created with: https://realfavicongenerator.net -->
+    <link rel="apple-touch-icon" sizes="180x180" href="css/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="css/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="css/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--END FAVICONS-->
+
+    <!-- Script to allow same header over all pages.  Test in Microsoft Edge.  Header file in header.html -->
+    <script>
+    $.get("header.html", function(data){
+      $("#header-placeholder").replaceWith(data);
+    });
+    </script>
+
+    <!-- Script to allow same footer over all pages.  Test in Microsoft Edge.  Footer file in footer.html -->
+    <script>
+    $.get("footer.html", function(data){
+      $("#footer-placeholder").replaceWith(data);
+    });
+    </script>
+
+  </head>
+
+  <!-- Beginning of the body of the website -->
+  <div class="mdl-layout">
+
+    <!-- Header Start (Will be pulled from script in <head>)-->
+    <div id="header-placeholder"></div>
+    <!-- Header End -->
+
+    <!-- CSS class to put 25px  of padding between contact info and footer-->
+    <div class="spacer"></div>
+
+    <!-- Title of page -->
+    <h1 class="card_title">Contribute</h1>
+
+    <h3>
+      There are many ways to support our team.  We are always looking for donations to fund the program, mentors to help our students, and corporate partnerships to expand the experience.  We are 501c3 affiliated with the <a href="http://www.chsfoundation.info/about.html" target="_blank">Clairemont High School Foundation</a>  meaning that all of your donations are tax deductable.  Tax Id #33-0551164.
+    </h3>
+    <!-- https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9ZK54MDPELWZQ -->
+    <!--This section outlines the "PayPal" segment -->
+    <!--A "card" is defined by a section with a background and a shadow. There are three parts.
+    A title, and two boxes layed out horizontally to each other-->
+    <h2 class="card_title">PayPal</h2>
+    <!--Grid which holds an image on one side and text on the other-->
+    <div class="mdl-grid mdl-shadow--4dp card_format">
+      <!--IMAGE
+      paypal id sets correct image-->
+      <div id="paypal" class="mdl-cell mdl-cell--6-col"></div>
+      <!--TEXT-->
+      <div class="mdl-cell mdl-cell--6-col card_text">
+        Donate to our PayPal to fund our cause.  Your money will go to providing free education on robotics, marketing, and programming to students in the community.
+
+        <br>
+        <!-- Accent-colored raised button with ripple
+        Link to PayPal donation website
+        target="_blank" opens link in new page-->
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9ZK54MDPELWZQ"  target="_blank">
+          Donate now!
+        </a>
+      </div>
+    </div>
+    <!--END SEGMENT-->
+
+    <!--This section outlines the "Become A Mentor" segment -->
+    <!--A "card" is defined by a section with a background and a shadow. There are three parts.
+    A title, and two boxes layed out horizontally to each other-->
+    <h2 class="card_title">Become A Mentor</h2>
+    <!--Grid which holds an image on one side and text on the other-->
+    <div class="mdl-grid mdl-shadow--4dp card_format">
+      <!--TEXT-->
+      <div class="mdl-cell mdl-cell--6-col card_text">
+        Become a mentor to teach and support the team members.  Mentors are the core of our team.  Their presence is always welcome to help out with building, or designing, or programming, or marketing.  Sign up to be a mentor and we will contact you with more information.
+
+        <br>
+        <!-- Accent-colored raised button with ripple
+        Link to Member sign up Google Forms
+        target="_blank" opens link in new page-->
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="https://docs.google.com/forms/d/e/1FAIpQLScO_LWX2ebeLX-Boau9RugMpos0INJOBwwY3zuibrwImdmqpQ/viewform?usp=sf_link" target="_blank">
+          Sign up to become a mentor!
+        </a>
+      </div>
+      <!--IMAGE
+      mentor id sets correct image-->
+      <div id="mentors" class="mdl-cell mdl-cell--6-col"></div>
+    </div>
+    <!--END SEGMENT-->
+
+    <!--This section outlines the "Corporate Sponsorships" segment -->
+    <!--A "card" is defined by a section with a background and a shadow. There are three parts.
+    A title, and two boxes layed out horizontally to each other-->
+    <h2 class="card_title">Corporate Sponsorships</h2>
+    <!--Grid which holds an image on one side and text on the other-->
+    <div class="mdl-grid mdl-shadow--4dp card_format">
+      <!--IMAGE
+      corporations id sets correct image-->
+      <div id="corporations" class="mdl-cell mdl-cell--6-col"></div>
+      <!--TEXT-->
+      <div class="mdl-cell mdl-cell--6-col card_text">
+        Corporate sponsorships are a major aspect of FIRST Robotics. That is the source of the majority of our funding. We display the logos of our sponsors on our robot, on our website, and at competition.  Sponsors are incredibly helpful as they provide real-world experiences and resources that are impossible for us receive otherwise. We love our sponsors!
+
+        <!-- Accent-colored raised button with ripple
+        Link to Sponsor sign up Google Forms
+        target="_blank" opens link in new page-->
+        <br>
+        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="https://docs.google.com/forms/d/e/1FAIpQLSeer8XgF3MbT7nPl0PK7Qjz3acDV-2rhs1Ef3r_mpertcfleA/viewform?usp=sf_link"  target="_blank">
+          Become a Sponsor!
+        </a>
+      </div>
+    </div>
+    <!--END SEGMENT-->
+
+    <!-- CSS class to put 25px  of padding between contact info and footer-->
+    <div class="spacer"></div>
+
+
+    <!--Footer Begin (Will be pulled from script in <head>)-->
+    <div id="footer-placeholder"></div>
+    <!-- Footer End-->
+
+  </div>
+</html>

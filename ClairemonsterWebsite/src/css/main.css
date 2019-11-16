@@ -1,0 +1,654 @@
+/* All use (Begin) */
+
+h3 {
+    text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+p {
+    text-indent: 5em;
+    margin: 10px 0;
+}
+
+.center {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.card_title {
+    padding-top: 50px;
+    align-self: center;
+    font-weight: bold;
+    color: 'mdl-color-accent';
+}
+
+.card_format {
+    background: lightgray;
+    width: 90vw;
+}
+
+.card_text {
+    color: black;
+    font-size: 20px;
+}
+
+.spacer {
+    padding: 25px;
+}
+
+.mdl-card__title-text {
+    color: #fff;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.demo-card-square {
+    width: 100%;
+    height: 20vw;
+}
+
+.demo-card-wide {
+    width: 50vw;
+    height: 20vw;
+}
+
+.demo-card-medium {
+    width: 40vw;
+    height: 20vw;
+}
+
+.full_grid {
+    width: 80vw;
+}
+
+.contain_grid {
+    width: auto;
+}
+
+.full_card {
+    width: 80vw;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.circle {
+    width: 50%;
+    padding: 25% 0;
+    border-radius: 50%;
+}
+
+.mdl-grid h4,
+h5 {
+    text-align: center;
+    margin: 0;
+    padding: 0.1em;
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.blue {
+    background: blue;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.center-horiz {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-vert {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.github-icon {
+    background-image: url("images/github.ico");
+    width: 32px;
+    height: 32px;
+}
+
+.icon {
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+
+.blue_outline{
+  border-style: solid;
+  border-width: medium;
+  shadow: blue;
+}
+
+.center_text{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.flex_card{
+  width:100%;
+  height: 100%;
+}
+/* All use (End) */
+
+/* header.html (Begin) */
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    /* adds animation for all transitions */
+
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+
+  }
+  /* Makes sure that everything is 100% height */
+  #drawer-toggle {
+    position: absolute;
+    opacity: 0;
+  }
+
+  #drawer-toggle-label {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    left: 0px;
+    height: 50px;
+    width: 50px;
+    display: block;
+    position: fixed;
+    background: rgba(255, 255, 255, .0);
+    z-index: 1;
+  }
+
+  /* adds our "hamburger" menu icon */
+  #drawer-toggle-label:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 24px;
+    background: black;
+    left: 13px;
+    top: 18px;
+    box-shadow: 0 6px 0 black, 0 12px 0 black;
+  }
+
+  header {
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    background: #efefef;
+    padding: 10px 10px 10px 50px;
+    font-size: 30px;
+    line-height: 30px;
+    z-index: 0;
+  }
+  /* drawer menu pane - note the 0px width */
+
+  #drawer {
+    position: fixed;
+    top: 44px;
+    left: -300px;
+    height: 100%;
+    width: 300px;
+    background: #2f2f2f;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 20px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* checked styles (menu open state) */
+  #drawer-toggle:checked ~ #drawer-toggle-label {
+    height: 100%;
+    width: calc(100% - 300px);
+    background: rgba(255, 255, 255, .8);
+    position:absolute;
+    z-index: 1;
+  }
+
+  #drawer-toggle:checked ~ #drawer-toggle-label,
+  #drawer-toggle:checked ~ header {
+    left: 300px;
+  }
+
+  #drawer-toggle:checked ~ #drawer {
+    left: 0px;
+    z-index: 100;
+  }
+
+  #drawer-toggle:checked ~ #page-content {
+    margin-left: 300px;
+  }
+  /* Menu item styles */
+
+  #drawer ul {
+    list-style-type: none;
+  }
+
+  #drawer ul a {
+    display: block;
+    padding: 10px;
+    color: #c7c7c7;
+    text-decoration: none;
+  }
+
+  #drawer ul a:hover {
+    color: white;
+  }
+  #mobile-text-header{
+    color: black;
+  }
+
+/* header.html (END) */
+
+
+
+/* Main.html (Begin) */
+
+.hero h1 {
+    /* Align and style text */
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14.8vw;
+}
+
+/* Big introductory image */
+
+.hero {
+    /* Max width */
+    width: 100vw;
+    /* Max height */
+    height: 100vh;
+
+    /* Center horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*Background*/
+    background-image: url('images/team_photo.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* Parallax image setting*/
+    background-attachment: fixed;
+}
+
+/* Puts a space underneath all <div> tags inside of the grid taged officers_grid */
+
+#officers_grid > div {
+    margin-bottom: 0%;
+}
+
+/*Next classes are for the images of our leadership team
+		To update, change image url
+		Will adjust to size of screen
+		1em margin will put a 1 font-size gap between picture and text */
+
+#officer_captain {
+    background: url('images/main/KeaganHolmes.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_co_captain {
+    background-image: url('images/main/AlecShu.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_programming {
+    background-image: url('images/main/DerekMcCauley.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_marketing {
+    background-image: url('images/main/EvieGill.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_build_design {
+    background-image: url('images/main/notmatthew.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_secretary {
+    background-image: url('images/main/notsierrra.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+#officer_treasurer {
+    background-image: url('images/main/notdrew.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1em;
+}
+
+/* Formatting of next id classes are for grid images and will resize to the screen
+		 Contain property will cause it to expand and contract */
+
+#contact_image {
+    background: url('images/main/contact.jpg') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#current_image {
+    background: url('images/current.JPG') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#our_team_image {
+    background: url('images/our_team.JPG') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* Main.html (End) */
+
+/* Contact.html (End) */
+
+.contact {
+    margin: 0 auto;
+    width: 90vw;
+    height: 40vh;
+}
+
+.contact_text {
+    color: #000000;
+    font-size: 3vw;
+}
+
+/* Contact.html (End) */
+
+/*History.html (Begin)*/
+
+#history_articles h1 {
+    text-align: center;
+}
+
+hr {
+    margin-left: 6.3vw;
+    margin-right: 6.3vw;
+}
+
+#history_articles p {
+    text-align: left;
+    margin-right: 12vw;
+    margin-left: 1vw;
+    color: #000000;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#history_articles iframe {
+    margin-left: 12vw;
+    width: 48vw;
+    height: 27vw;
+}
+
+#history_articles img {
+    width: 35vw;
+    height: auto;
+    margin-left: 12vw;
+    display: block;
+}
+
+#history_grid {
+    width: 90%;
+}
+
+#card_2015 .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/history_photos/2015.jpg');
+    background-size: cover;
+}
+
+#card_2016 .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/history_photos/2016.jpg');
+    background-size: cover;
+}
+
+#card_2017 .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/history_photos/2017.jpg');
+    background-size: cover;
+}
+
+#card_2018 .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/history_photos/2018.jpg');
+    background-size: cover;
+}
+
+#main_link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*History.html (End)*/
+
+
+
+
+/* sign_up.html (Begin)*/
+
+/* sign_up.html (End) */
+
+
+
+
+/* blog.html (Begin) */
+.mdl-card__supporting-text {
+    margin: auto;
+    font-size: 20px;
+}
+
+#social_media_post {
+    background: url('images/blog_photos/example_post.png');
+    background-size: cover;
+}
+
+#blog_post {
+    background: url('images/blog_photos/blogging.png');
+    background-size: cover;
+}
+
+#blog_grid {
+    width: 80vw;
+}
+
+#social_media_grid {
+    position: relative;
+    width: 80vw;
+}
+
+#facebook {
+    width: 500px;
+}
+
+#our_philosophy {
+    background: url('images/blog_photos/blogging.png') no-repeat;
+    /* Expand image so there is no white space */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#ericka {
+    background: url('images/blog_photos/ericka.png') no-repeat;
+    /* Expand image so there is no white space */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#open_source {
+    background: url('images/blog_photos/open_source.png') no-repeat;
+    /* Shrink the image so whole thing fits */
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Generated from clairemonsterrobotics.com/blog_creator.html */
+#starting_a_team{
+    background: url('images/blog_photos/starting_a_team.png') no-repeat;
+    /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#purpose_of_marketing{
+    background: url('images/blog_photos/purpose_of_marketing.jpg') no-repeat;
+    /* Change "background-size: cover;" to "background-size: contain; if full picture is need, or cut-off */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Put new blog css elements here! */
+
+
+/* blog.html (End) */
+
+/* support.html (Begin) */
+
+#paypal {
+    background: url('images/paypal_button.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#mentors {
+    background: url('images/mentors.JPG') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#corporations {
+    background: url('images/sponsors.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* support.html (End) */
+
+/* sponsors.html (Begin) */
+
+#sponsor_arc .flex_card > .mdl-card__title {
+  background: url('images/Sponsor_logos/arc.png') no-repeat;
+  /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
+  background-size: contain;
+  background-position: center;
+  padding: 100px;
+margin: 5px;
+}
+
+#sponsor_nasa .flex_card > .mdl-card__title {
+  background: url('images/Sponsor_logos/nasa.png') no-repeat;
+  /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
+  background-size: contain;
+  background-position: center;
+  padding: 100px;
+margin: 5px;
+}
+
+#sponsor_first .flex_card > .mdl-card__title {
+  background: url('images/Sponsor_logos/first1.png') no-repeat;
+  /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
+  background-size: contain;
+  background-position: center;
+  padding: 100px;
+margin: 5px;
+}
+
+#sponsor_mitchell .flex_card > .mdl-card__title {
+  background: url('images/Sponsor_logos/mitchell.png') no-repeat;
+  /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
+  background-size: contain;
+  background-position: center;
+  padding: 100px;
+margin: 5px;
+}
+
+#sponsor_rotary .flex_card > .mdl-card__title {
+  background: url('images/Sponsor_logos/rotary_foundation.png') no-repeat;
+  /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
+  background-size: contain;
+  background-position: center;
+  padding: 100px;
+margin: 5px;
+  background-color: #000000;
+}
+
+
+#sponsor_qualcomm .flex_card > .mdl-card__title {
+  background: url('images/Sponsor_logos/qualcomm.png') no-repeat;
+  /* Change "background-size: cover;" to "background-size: contain;" if full picture is needed */
+  background-size: contain;
+  background-position: center;
+  padding: 100px;
+margin: 5px;
+  
+}
+
+/* sponsors.html (End) */
+
+/* blog_creator.html (Begin) */
+  code {
+      background: hsl(220, 80%, 90%);
+  }
+
+  pre {
+      white-space: pre-wrap;
+      background: hsl(30,80%,90%);
+  }
+  .text_no_margin {
+    text-align: center;
+    margin: 0;
+    padding: 0.1em;
+  }
+/* blog_creator.html (Begin) */
+
+
+</style >
