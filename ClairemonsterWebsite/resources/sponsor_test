@@ -1,0 +1,159 @@
+    <!-- TO DO LIST: LINK CARDS TO SPONSOR WEBSITES. WRITE DESCRIPTIONS FOR EACH SPONSOR. FORMAT CARDS TO CENTER IN THE TABLE BOXES. -->
+    <table id="spontable">
+        <tr>
+            <td id="sponsor_first">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp center-horiz">
+                    <div class="mdl-card__title mdl-card--expand">
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a href="https://www.firstinspires.org/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">First Robotics</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+              The original sponsor.  FIRST is an incredible organization providing us with connections, materials, and most importantly robotics.  Without FIRST, we would just be a bunch of nerds without anything to do.
+            </td>
+            <td id="sponsor_arc">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp center-horiz">
+                    <div class="mdl-card__title mdl-card--expand">
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a href="http://arc-experience.com/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Arc</a>
+                    </div>
+                </div>
+
+            </td>
+            <td>
+              <a href="http://arc-experience.com/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Arc</a>
+              Arc is the school after-school program.  They provide us with snacks and our incredible shirts.  In addition, we work with them to help expand the outreach in our school.
+            </td>
+        </tr>
+        <tr>
+            <td id="sponsor_qualcomm">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp center-horiz">
+                    <div class="mdl-card__title mdl-card--expand">
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a href="https://www.qualcomm.com/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Qualcomm</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+              Qualcomm is a very generous sponsor not only to our team, but FIRST in general.  They help fund the San Diego Regional competition every year.  Many of our mentors also are employed there, or were employed at this innovative company.
+            </td>
+            <td id="sponsor_nasa">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp center-horiz">
+                    <div class="mdl-card__title mdl-card--expand">
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a href="https://www.nasa.gov/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Nasa</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+              NASA is kind of a sponsor of dreams.  They are an idol to us, a symbol of innovation and space travel.  They allowed us to compete at the Lancaster Aerospace Valley Regional where for the first time in our team's history, we participated in semi-finals.
+            </td>
+        </tr>
+        <tr>
+            <td id="sponsor_mitchell">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp center-horiz">
+                    <div class="mdl-card__title mdl-card--expand">
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                    </div>
+                </div>
+            </td>
+            <td>
+              Mitchell is another great sponsor who also provides us mentors as well.  We are incredible thankful for everything they have funded and supported us in.
+            </td>
+            <td id="sponsor_rotary">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp center-horiz">
+                    <div class="mdl-card__title mdl-card--expand">
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a href="https://portal.clubrunner.ca/9008/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Rotary Foundation</a>
+                    </div>
+                </div>
+            </td>
+            <td>
+              The local Old Mission Rotary Foundation is one of our newest sponsors, but are a great addition.  They have helped us gather more materials to allow us to succeed in everything we do.
+            </td>
+        </tr>
+    </table>
+    
+    #spontable {
+    width: 80%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+#spontable .mdl-card__actions {
+    font: 20px arial, sans-serif;
+}
+
+#spontable .demo-card-square.mdl-card {
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    border-style: solid;
+    border-width: medium;
+    shadow: blue;
+}
+#spontable td:nth-child(0){
+    width:30%;
+}
+
+#spontable td:nth-child(2){
+    width:30%;
+}
+
+#spontable td:nth-child(1){
+    width:20%;
+}
+
+#spontable td:nth-child(3){
+    width:20%;
+}
+#sponsor_arc .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/Sponsor_logos/arc.png') bottom right 15% no-repeat;
+    background-size: 90%;
+    background-position: center;
+    background-color: #fff
+
+}
+#sponsor_nasa .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/Sponsor_logos/nasa.png') bottom right 15% no-repeat;
+    background-size: 90%;
+    background-position: center;
+    background-color: #fff
+}
+#sponsor_first .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/Sponsor_logos/first1.png') bottom right 15% no-repeat;
+    background-size: 90%;
+    background-position: center;
+    background-color: #fff
+}
+#sponsor_mitchell .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/Sponsor_logos/mitchell.png') bottom right 15% no-repeat;
+    background-size: 90%;
+    background-position: center;
+    background-color: #fff
+}
+#sponsor_rotary .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/Sponsor_logos/rotary_foundation.png') bottom right 15% no-repeat;
+    background-size: 90%;
+    background-position: center;
+    background-color: #000000
+}
+#sponsor_qualcomm .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/Sponsor_logos/qualcomm.png') bottom right 15% no-repeat;
+    background-size: 90%;
+    background-position: center;
+    background-color: #fff
+}
