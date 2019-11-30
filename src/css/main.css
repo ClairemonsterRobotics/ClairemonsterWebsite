@@ -129,7 +129,7 @@ h5 {
 .blue_outline{
   border-style: solid;
   border-width: medium;
-  shadow: blue;
+  box-shadow: blue;
 }
 
 .center_text{
@@ -340,21 +340,21 @@ h5 {
 }
 
 #officer_build_design {
-    background-image: url('images/main/notmatthew.jpg');
+    background-image: url('images/main/MatthewKinney.jpg');
     background-size: cover;
     background-position: center center;
     margin-bottom: 1em;
 }
 
 #officer_secretary {
-    background-image: url('images/main/notsierrra.jpg');
+    background-image: url('images/main/SierraSpain.jpg');
     background-size: cover;
     background-position: center center;
     margin-bottom: 1em;
 }
 
 #officer_treasurer {
-    background-image: url('images/main/notdrew.jpg');
+    background-image: url('images/main/DrewJeter.jpg');
     background-size: cover;
     background-position: center center;
     margin-bottom: 1em;
@@ -458,7 +458,11 @@ hr {
     background: url('images/history_photos/2018.jpg');
     background-size: cover;
 }
-
+#card_2019 .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: url('images/history_photos/2019.jpg');
+    background-size: cover;
+}
 #main_link {
     color: #FFFFFF;
     text-decoration: none;
@@ -649,6 +653,4 @@ margin: 5px;
     padding: 0.1em;
   }
 /* blog_creator.html (Begin) */
-
-
-</style >
+</style>
