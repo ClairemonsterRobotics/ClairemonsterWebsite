@@ -10,6 +10,7 @@ function close_others(){
   document.getElementById("article_2016").style.display = "none";
   document.getElementById("article_2017").style.display = "none";
   document.getElementById("article_2018").style.display = "none";
+  document.getElementById("article_2019").style.display = "none";
 }
 
 window.onload = function() {
