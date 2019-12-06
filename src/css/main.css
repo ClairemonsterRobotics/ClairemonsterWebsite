@@ -290,7 +290,7 @@ h5 {
     align-items: center;
 
     /*Background*/
-    background-image: url('images/team_photo.jpg');
+    background-image: url('images/team_photo.JPG');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -459,7 +459,7 @@ hr {
 }
 #card_2019 .demo-card-square > .mdl-card__title {
     color: #fff;
-    background: url('images/history_photos/2019.jpg');
+    background: url('images/history_photos/2019.JPG');
     background-size: cover;
 }
 #main_link {
