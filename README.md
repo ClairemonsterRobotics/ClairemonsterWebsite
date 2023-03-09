@@ -1,4 +1,6 @@
-# Clairemonster Website
+# Clairemonster Website *Inactive*
+
+-- Hosting Site Offline :(
 
 This is the repository on the Clairemonster Robotics FRC team 5474 website.  Our website is open source.  If you would like help creating your own website (preferably a FIRST team) feel free to contact us at <a href="mailto:clairemonsterrobotics@gmail.com">clairemonsterrobotics@gmail.com</a>, we are always willing to help.  We are constructing this website from scratch to help us learn about web development to teach incoming members and other teams about programming.
 
